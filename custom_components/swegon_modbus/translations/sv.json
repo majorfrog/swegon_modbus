@@ -1,0 +1,387 @@
+{
+  "config": {
+    "step": {
+      "rtu": {
+        "title": "RTU seriell anslutning",
+        "description": "Ange seriell portinställning för Modbus RTU-bussen.",
+        "data": {
+          "port": "Seriell port",
+          "unit_id": "Enhets-ID",
+          "baudrate": "Baudrate",
+          "bytesize": "Databitar",
+          "parity": "Paritet",
+          "stopbits": "Stoppbitar"
+        },
+        "data_description": {
+          "port": "Sökväg till serieenhet, t.ex. `/dev/ttyUSB0` eller `COM3`.",
+          "unit_id": "Modbus-enhets-ID för målenheten (1–247).",
+          "baudrate": "Kommunikationshastighet i bps (standard: 19200 för Swegon CASA).",
+          "bytesize": "Antal databitar (vanligtvis 8).",
+          "parity": "Paritetsinställning (standard: E för Swegon CASA).",
+          "stopbits": "Antal stoppbitar."
+        }
+      },
+      "reconfigure": {
+        "title": "Konfigurera om Swegon Modbus",
+        "description": "Uppdatera seriella anslutningsparametrarna för den här enheten.",
+        "data": {
+          "port": "Seriell port",
+          "unit_id": "Enhets-ID",
+          "baudrate": "Baudrate",
+          "bytesize": "Databitar",
+          "parity": "Paritet",
+          "stopbits": "Stoppbitar"
+        },
+        "data_description": {
+          "port": "Sökväg till serieenhet, t.ex. `/dev/ttyUSB0` eller `COM3`.",
+          "unit_id": "Modbus-enhets-ID för målenheten (1–247).",
+          "baudrate": "Kommunikationshastighet i bps.",
+          "bytesize": "Antal databitar (vanligtvis 8).",
+          "parity": "Paritetsinställning.",
+          "stopbits": "Antal stoppbitar."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Det gick inte att ansluta till Modbus-enheten. Kontrollera dina inställningar och försök igen."
+    },
+    "abort": {
+      "already_configured": "Den här Modbus-enheten är redan konfigurerad.",
+      "yaml_import_failed": "Det gick inte att importera konfigurationen från `configuration.yaml`. Kontrollera loggarna för mer information.",
+      "reconfigure_successful": "Omkonfigurationen lyckades."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "fresh_air_temp": { "name": "Frisklufttemperatur" },
+      "supply_air_temp": { "name": "Tilluftstemperatur" },
+      "extract_air_temp": { "name": "Frånluftstemperatur" },
+      "supply_air_before_reheater_temp": {
+        "name": "Tilluftstemperatur (före eftervärmare)"
+      },
+      "exhaust_air_temp": { "name": "Avluftstemperatur" },
+      "room_air_temp": { "name": "Rumslufttemperatur" },
+      "user_panel_1_temp": { "name": "Användarpanel 1 temperatur" },
+      "user_panel_2_temp": { "name": "Användarpanel 2 temperatur" },
+      "water_radiator_temp": { "name": "Vattenbatteriets temperatur" },
+      "preheater_temp": { "name": "Förvärmares temperatur" },
+      "external_fresh_air_temp": { "name": "Extern frisklufttemperatur" },
+      "supply_fan_speed": { "name": "Tilluftsfläktens hastighet" },
+      "extract_fan_speed": { "name": "Frånluftsfläktens hastighet" },
+      "rotor_rpm": { "name": "Rotorvarvtal" },
+      "co2": { "name": "CO\u2082" },
+      "co2_unfiltered": { "name": "CO\u2082 (ofiltrerat)" },
+      "humidity": { "name": "Luftfuktighet" },
+      "absolute_humidity": { "name": "Absolut luftfuktighet" },
+      "absolute_humidity_setpoint": {
+        "name": "Börvärde absolut luftfuktighet"
+      },
+      "voc": { "name": "VOC" },
+      "supply_duct_pressure": { "name": "Tilluftskanaltryck" },
+      "exhaust_duct_pressure": { "name": "Frånluftskanaltryck" },
+      "supply_air_flow": { "name": "Tilluftsflöde" },
+      "exhaust_air_flow": { "name": "Frånluftsflöde" },
+      "supply_fan_control": { "name": "Tilluftsfläktens styrsignal" },
+      "exhaust_fan_control": { "name": "Frånluftsfläktens styrsignal" },
+      "boost_time_left": { "name": "Återstående boosttid" },
+      "auto_co2_control": { "name": "Auto CO\u2082-styrningsutgång" },
+      "auto_rh_control": { "name": "Auto fuktighetsreglering utgång" },
+      "auto_air_quality_control_output": {
+        "name": "Auto luftkvalitetsstyrning utgång"
+      },
+      "auto_temp_boost_control": {
+        "name": "Auto temperaturboost styrning utgång"
+      },
+      "fan_speed_limit_control": {
+        "name": "Fläkthastighets begränsning utgång"
+      },
+      "smart_control_output": { "name": "Smart-styrning utgång" },
+      "supply_control_power": { "name": "Tilluftsstyrningseffekt" },
+      "room_controller_supply_setpoint": {
+        "name": "Rumsregulatorns tilluftsbörvärde"
+      },
+      "defrost_status": { "name": "Avfrostningsstatus" },
+      "heat_exchanger_bypass": { "name": "Värmeväxlarförbikoppling" },
+      "heat_exchanger_bypass_auto": {
+        "name": "Värmeväxlarförbikoppling (auto)"
+      },
+      "hours_to_service": { "name": "Timmar till service" },
+      "preheater_output_power": { "name": "Förvärmares uteffekt" },
+      "nordic_preheater_power": { "name": "Nordisk förvärmare effekt" },
+      "defrost_supply_limit": { "name": "Avfrostningens tilluftsgräns" },
+      "defrost_exhaust_forcing": { "name": "Avfrostningens frånluftstvång" },
+      "firmware_version_major": { "name": "Firmwareversion (major)" },
+      "firmware_version_minor": { "name": "Firmwareversion (minor)" },
+      "firmware_build": { "name": "Firmware-byggnummer" },
+      "unit_state": {
+        "name": "Enhetsstatus",
+        "state": {
+          "ext_stop": "Externt stopp",
+          "user_stop": "Användarstopp",
+          "starting": "Startar",
+          "normal": "Normal",
+          "commissioning": "Driftsättning"
+        }
+      },
+      "operating_mode_status": {
+        "name": "Driftläge",
+        "state": {
+          "stopped": "Stoppad",
+          "away": "Borta",
+          "home": "Hemma",
+          "boost": "Boost",
+          "travelling": "Resa"
+        }
+      }
+    },
+    "binary_sensor": {
+      "combined_alarm": { "name": "Kombinerat larm" },
+      "combined_info": { "name": "Kombinerad info" },
+      "alarm_active": { "name": "Larm aktivt" },
+      "info_active": { "name": "Info aktivt" },
+      "service_info": { "name": "Serviceinfo" },
+      "filter_guard_active": { "name": "Filtervakt aktiv" },
+      "travelling_active": { "name": "Reseläge aktivt" },
+      "week_timer_active": { "name": "Veckoschema aktivt" },
+      "cooling_control_active": { "name": "Kylstyrning aktiv" },
+      "rotor_active": { "name": "Rotor aktiv" },
+      "preheater_active": { "name": "Förvärmare aktiv" },
+      "summer_cooling_active": { "name": "Sommarkylning aktiv" },
+      "fireplace_active": { "name": "Eldstad aktiv" },
+      "central_vacuum_active": { "name": "Centralstömsug aktiv" },
+      "hood_compensation_active": { "name": "Huv-kompensation aktiv" },
+      "external_boost_active": { "name": "Extern boost aktiv" },
+      "external_away_active": { "name": "Externt bortaläge aktivt" }
+    },
+    "switch": {
+      "travelling_mode": { "name": "Reseläge" },
+      "cooker_hood_damper": { "name": "Spiskåpsspjäll" },
+      "cooker_hood_function": { "name": "Spiskåpsfunktion" },
+      "central_vacuum_cleaner": { "name": "Centralstömsug" },
+      "auto_home_away_boost": { "name": "Auto hemma/borta/boost" },
+      "heating_boost_control": { "name": "Värmeboost styrning" },
+      "internal_post_heater": { "name": "Intern eftervärmare" },
+      "external_cooling": { "name": "Extern kylning" },
+      "external_post_heater": { "name": "Extern eftervärmare" },
+      "external_liquid_coil": { "name": "Externt vätskebatteri" },
+      "external_electrical_preheater": {
+        "name": "Extern elektrisk förvärmare"
+      },
+      "summer_cooling_cooker_hood_damper": {
+        "name": "Sommarkylning spiskåpsspjäll"
+      }
+    },
+    "select": {
+      "operating_mode": {
+        "name": "Driftläge",
+        "state": {
+          "stopped": "Stoppad",
+          "away": "Borta",
+          "home": "Hemma",
+          "boost": "Boost",
+          "travelling": "Resa"
+        }
+      },
+      "emergency_stop": {
+        "name": "Nödstopp",
+        "state": {
+          "disabled": "Inaktiverat",
+          "active": "Aktivt",
+          "overpressurizing": "Övertrycksättning"
+        }
+      },
+      "auto_humidity_control": {
+        "name": "Auto fuktighetsreglering",
+        "state": {
+          "off": "Av",
+          "user": "Användare",
+          "low": "Låg",
+          "normal": "Normal",
+          "high": "Hög",
+          "full": "Full"
+        }
+      },
+      "auto_air_quality_control": {
+        "name": "Auto luftkvalitetsstyrning",
+        "state": {
+          "off": "Av",
+          "user": "Användare",
+          "low": "Låg",
+          "normal": "Normal",
+          "high": "Hög",
+          "full": "Full"
+        }
+      },
+      "temperature_controller_method": {
+        "name": "Temperaturreglering metod",
+        "state": {
+          "supply_air": "Tilluft",
+          "room_air": "Rumsluft"
+        }
+      },
+      "summer_night_cooling_control": {
+        "name": "Sommarnattkylning",
+        "state": {
+          "off": "Av",
+          "low": "Låg",
+          "normal": "Normal",
+          "high": "Hög",
+          "full": "Full",
+          "user": "Användare"
+        }
+      },
+      "heating_mode": {
+        "name": "Värmeläge",
+        "state": {
+          "not_available": "Ej tillgängligt",
+          "eco": "Eco",
+          "comfort": "Komfort"
+        }
+      },
+      "room_temperature_sensor": {
+        "name": "Rumstemperatursensor",
+        "state": {
+          "internal": "Intern",
+          "t6": "T6",
+          "t7": "T7",
+          "t8": "T8",
+          "t9": "T9",
+          "up1": "UP1",
+          "up2": "UP2"
+        }
+      },
+      "supply_temperature_sensor": {
+        "name": "Tilluftstemperatursensor",
+        "state": {
+          "internal": "Intern",
+          "t6": "T6",
+          "t7": "T7",
+          "t8": "T8",
+          "t9": "T9"
+        }
+      },
+      "outside_temperature_sensor": {
+        "name": "Utetemperatursensor",
+        "state": {
+          "internal": "Intern",
+          "t6": "T6",
+          "t7": "T7",
+          "t8": "T8",
+          "t9": "T9"
+        }
+      },
+      "water_temperature_sensor": {
+        "name": "Vattentemperatursensor",
+        "state": {
+          "internal": "Intern",
+          "t6": "T6",
+          "t7": "T7",
+          "t8": "T8",
+          "t9": "T9"
+        }
+      },
+      "summer_night_cooling_boost_control": {
+        "name": "Sommarnattkylning boost",
+        "state": {
+          "off": "Av",
+          "low": "Låg",
+          "normal": "Normal",
+          "high": "Hög",
+          "full": "Full",
+          "user": "Användare"
+        }
+      }
+    },
+    "number": {
+      "temperature_setpoint": { "name": "Temperaturbörvärde" },
+      "smart_control": { "name": "Smart-styrning" },
+      "supply_fan_speed_away": { "name": "Tilluftsfläkt (borta)" },
+      "exhaust_fan_speed_away": { "name": "Frånluftsfläkt (borta)" },
+      "supply_fan_speed_home": { "name": "Tilluftsfläkt (hemma)" },
+      "exhaust_fan_speed_home": { "name": "Frånluftsfläkt (hemma)" },
+      "supply_fan_speed_boost": { "name": "Tilluftsfläkt (boost)" },
+      "exhaust_fan_speed_boost": { "name": "Frånluftsfläkt (boost)" },
+      "max_smart_boost": { "name": "Maximal smart boost" },
+      "fireplace_run_time": { "name": "Eldstad körtid" },
+      "fireplace_max_speed_diff": {
+        "name": "Eldstad maximal hastighetsskillnad"
+      },
+      "travelling_speed_drop": { "name": "Reseläge hastighetssänkning" },
+      "travelling_temp_drop": { "name": "Reseläge temperatursänkning" },
+      "away_temp_drop": { "name": "Bortaläge temperatursänkning" },
+      "co2_home_limit": { "name": "CO\u2082 hemmagräns" },
+      "co2_away_limit": { "name": "CO\u2082 bortagräns" },
+      "rh_boost_limit": { "name": "Fuktighets-boostgräns" },
+      "rh_full_boost_limit": { "name": "Fuktighets full-boostgräns" },
+      "voc_boost_limit": { "name": "VOC-boostgräns" },
+      "voc_full_boost_limit": { "name": "VOC full-boostgräns" },
+      "summer_cooling_fresh_air_limit": {
+        "name": "Sommarkylning friskluftsgräns"
+      },
+      "summer_cooling_room_temp_limit": {
+        "name": "Sommarkylning rumstemperaturgräns"
+      },
+      "summer_cooling_min_supply_temp": {
+        "name": "Sommarkylning minimum tilluftstemperatur"
+      },
+      "summer_cooling_boost_room_limit": {
+        "name": "Sommarkylning boost rumsgräns"
+      },
+      "summer_cooling_full_boost_room_limit": {
+        "name": "Sommarkylning full boost rumsgräns"
+      },
+      "summer_cooling_fresh_air_start_limit": {
+        "name": "Sommarkylning startgräns friskluft"
+      },
+      "cooker_hood_home_compensation": { "name": "Spiskåpa hemkompensation" },
+      "cooker_hood_boost_compensation": {
+        "name": "Spiskåpa boostkompensation"
+      },
+      "cooker_hood_boost_speed": { "name": "Spiskåpa boosthastighet" },
+      "central_vacuum_run_time": { "name": "Centralstömsug körtid" },
+      "central_vacuum_compensation": { "name": "Centralstömsug kompensation" },
+      "rh_boost_delay": { "name": "Fuktighetsboost fördröjning" },
+      "rh_boost_during_delay": { "name": "Fuktighetsboost under fördröjning" },
+      "heating_boost_gain": { "name": "Värmeboost förstärkning" },
+      "heating_fresh_air_limit": { "name": "Värme friskluftsgräns" },
+      "room_temp_fine_tuning": { "name": "Rumstemperatur finjustering" },
+      "room_control_supply_min": { "name": "Rumsreglering tilluft minimum" },
+      "room_control_supply_max": { "name": "Rumsreglering tilluft maximum" },
+      "cooling_fresh_air_limit": { "name": "Kylning friskluftsgräns" },
+      "room_control_cooling_min": { "name": "Rumsreglering kylning minimum" },
+      "room_control_cooling_max": { "name": "Rumsreglering kylning maximum" },
+      "external_preheating_fresh_air_limit": {
+        "name": "Extern förvärmning friskluftsgräns"
+      },
+      "external_precooling_fresh_air_limit": {
+        "name": "Extern förkylning friskluftsgräns"
+      },
+      "supply_temp_fine_tuning": { "name": "Tilluftstemperatur finjustering" }
+    },
+    "button": {
+      "reset_all_alarms": { "name": "Återställ alla larm" },
+      "activate_fireplace": { "name": "Aktivera eldstad" },
+      "confirm_reheater_alarm": { "name": "Bekräfta eftervärmare larm" },
+      "confirm_preheater_alarm": { "name": "Bekräfta förvärmare larm" },
+      "confirm_freezing_alarm": { "name": "Bekräfta frysningslarm" },
+      "confirm_filter_alarm": { "name": "Bekräfta filterlarm" },
+      "confirm_service_alarm": { "name": "Bekräfta servicelarm" },
+      "confirm_fan_alarm": { "name": "Bekräfta fläktlarm" },
+      "confirm_sensor_alarm": { "name": "Bekräfta sensorlarm" }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Det gick inte att upprätta en Modbus-anslutning. Kontrollera värd, port och kabeldragning."
+    },
+    "connection_lost": {
+      "message": "Modbus-anslutning förlorad under polling: {error}"
+    },
+    "write_failed": {
+      "message": "Det gick inte att skriva till ett Modbus-hållningsregister. Kontrollera anslutningen och enhetsadressen."
+    },
+    "unknown_option": {
+      "message": "Det valda alternativet känns inte igen av enheten."
+    }
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "config": {
+    "step": {
+      "rtu": {
+        "title": "RTU serial connection",
+        "description": "Enter the serial port settings for the Modbus RTU bus.",
+        "data": {
+          "port": "Serial port",
+          "unit_id": "Unit ID",
+          "baudrate": "Baud rate",
+          "bytesize": "Data bits",
+          "parity": "Parity",
+          "stopbits": "Stop bits"
+        },
+        "data_description": {
+          "port": "Serial device path, e.g. `/dev/ttyUSB0` or `COM3`.",
+          "unit_id": "Modbus unit ID of the target device (1\u2013247).",
+          "baudrate": "Communication speed in bps (default: 19200 for Swegon CASA).",
+          "bytesize": "Number of data bits (typically 8).",
+          "parity": "Parity bit setting (default: E for Swegon CASA).",
+          "stopbits": "Number of stop bits."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Swegon Modbus",
+        "description": "Update the serial connection parameters for this device.",
+        "data": {
+          "port": "Serial port",
+          "unit_id": "Unit ID",
+          "baudrate": "Baud rate",
+          "bytesize": "Data bits",
+          "parity": "Parity",
+          "stopbits": "Stop bits"
+        },
+        "data_description": {
+          "port": "Serial device path, e.g. `/dev/ttyUSB0` or `COM3`.",
+          "unit_id": "Modbus unit ID of the target device (1\u2013247).",
+          "baudrate": "Communication speed in bps.",
+          "bytesize": "Number of data bits (typically 8).",
+          "parity": "Parity bit setting.",
+          "stopbits": "Number of stop bits."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the Modbus device. Check your settings and try again."
+    },
+    "abort": {
+      "already_configured": "This Modbus device is already configured.",
+      "yaml_import_failed": "Could not import the configuration from `configuration.yaml`. Check the logs for details.",
+      "reconfigure_successful": "Reconfiguration was successful."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "fresh_air_temp": { "name": "Fresh air temperature" },
+      "supply_air_temp": { "name": "Supply air temperature" },
+      "extract_air_temp": { "name": "Extract air temperature" },
+      "supply_air_before_reheater_temp": {
+        "name": "Supply air temperature (before reheater)"
+      },
+      "exhaust_air_temp": { "name": "Exhaust air temperature" },
+      "room_air_temp": { "name": "Room air temperature" },
+      "user_panel_1_temp": { "name": "User panel 1 temperature" },
+      "user_panel_2_temp": { "name": "User panel 2 temperature" },
+      "water_radiator_temp": { "name": "Water radiator temperature" },
+      "preheater_temp": { "name": "Preheater temperature" },
+      "external_fresh_air_temp": { "name": "External fresh air temperature" },
+      "supply_fan_speed": { "name": "Supply fan speed" },
+      "extract_fan_speed": { "name": "Extract fan speed" },
+      "rotor_rpm": { "name": "Rotor speed" },
+      "co2": { "name": "CO\u2082" },
+      "co2_unfiltered": { "name": "CO\u2082 (unfiltered)" },
+      "humidity": { "name": "Humidity" },
+      "absolute_humidity": { "name": "Absolute humidity" },
+      "absolute_humidity_setpoint": { "name": "Absolute humidity setpoint" },
+      "voc": { "name": "VOC" },
+      "supply_duct_pressure": { "name": "Supply duct pressure" },
+      "exhaust_duct_pressure": { "name": "Exhaust duct pressure" },
+      "supply_air_flow": { "name": "Supply air flow" },
+      "exhaust_air_flow": { "name": "Exhaust air flow" },
+      "supply_fan_control": { "name": "Supply fan control signal" },
+      "exhaust_fan_control": { "name": "Exhaust fan control signal" },
+      "boost_time_left": { "name": "Boost time left" },
+      "auto_co2_control": { "name": "Auto CO\u2082 control output" },
+      "auto_rh_control": { "name": "Auto humidity control output" },
+      "auto_air_quality_control_output": {
+        "name": "Auto air quality control output"
+      },
+      "auto_temp_boost_control": {
+        "name": "Auto temperature boost control output"
+      },
+      "fan_speed_limit_control": { "name": "Fan speed limit control output" },
+      "smart_control_output": { "name": "Smart control output" },
+      "supply_control_power": { "name": "Supply control power" },
+      "room_controller_supply_setpoint": {
+        "name": "Room controller supply setpoint"
+      },
+      "defrost_status": { "name": "Defrost status" },
+      "heat_exchanger_bypass": { "name": "Heat exchanger bypass" },
+      "heat_exchanger_bypass_auto": { "name": "Heat exchanger bypass (auto)" },
+      "hours_to_service": { "name": "Hours to service" },
+      "preheater_output_power": { "name": "Preheater output power" },
+      "nordic_preheater_power": { "name": "Nordic preheater power" },
+      "defrost_supply_limit": { "name": "Defrost supply limit" },
+      "defrost_exhaust_forcing": { "name": "Defrost exhaust forcing" },
+      "firmware_version_major": { "name": "Firmware version (major)" },
+      "firmware_version_minor": { "name": "Firmware version (minor)" },
+      "firmware_build": { "name": "Firmware build" },
+      "unit_state": {
+        "name": "Unit state",
+        "state": {
+          "ext_stop": "External stop",
+          "user_stop": "User stop",
+          "starting": "Starting",
+          "normal": "Normal",
+          "commissioning": "Commissioning"
+        }
+      },
+      "operating_mode_status": {
+        "name": "Operating mode",
+        "state": {
+          "stopped": "Stopped",
+          "away": "Away",
+          "home": "Home",
+          "boost": "Boost",
+          "travelling": "Travelling"
+        }
+      }
+    },
+    "binary_sensor": {
+      "combined_alarm": { "name": "Combined alarm" },
+      "combined_info": { "name": "Combined info" },
+      "alarm_active": { "name": "Alarm active" },
+      "info_active": { "name": "Info active" },
+      "service_info": { "name": "Service info" },
+      "filter_guard_active": { "name": "Filter guard active" },
+      "travelling_active": { "name": "Travelling active" },
+      "week_timer_active": { "name": "Week timer active" },
+      "cooling_control_active": { "name": "Cooling control active" },
+      "rotor_active": { "name": "Rotor active" },
+      "preheater_active": { "name": "Preheater active" },
+      "summer_cooling_active": { "name": "Summer cooling active" },
+      "fireplace_active": { "name": "Fireplace active" },
+      "central_vacuum_active": { "name": "Central vacuum active" },
+      "hood_compensation_active": { "name": "Hood compensation active" },
+      "external_boost_active": { "name": "External boost active" },
+      "external_away_active": { "name": "External away active" }
+    },
+    "switch": {
+      "travelling_mode": { "name": "Travelling mode" },
+      "cooker_hood_damper": { "name": "Cooker hood damper" },
+      "cooker_hood_function": { "name": "Cooker hood function" },
+      "central_vacuum_cleaner": { "name": "Central vacuum cleaner" },
+      "auto_home_away_boost": { "name": "Auto home/away/boost" },
+      "heating_boost_control": { "name": "Heating boost control" },
+      "internal_post_heater": { "name": "Internal post heater" },
+      "external_cooling": { "name": "External cooling" },
+      "external_post_heater": { "name": "External post heater" },
+      "external_liquid_coil": { "name": "External liquid coil" },
+      "external_electrical_preheater": {
+        "name": "External electrical preheater"
+      },
+      "summer_cooling_cooker_hood_damper": {
+        "name": "Summer cooling cooker hood damper"
+      }
+    },
+    "select": {
+      "operating_mode": {
+        "name": "Operating mode",
+        "state": {
+          "stopped": "Stopped",
+          "away": "Away",
+          "home": "Home",
+          "boost": "Boost",
+          "travelling": "Travelling"
+        }
+      },
+      "emergency_stop": {
+        "name": "Emergency stop",
+        "state": {
+          "disabled": "Disabled",
+          "active": "Active",
+          "overpressurizing": "Overpressurizing"
+        }
+      },
+      "auto_humidity_control": {
+        "name": "Auto humidity control",
+        "state": {
+          "off": "Off",
+          "user": "User",
+          "low": "Low",
+          "normal": "Normal",
+          "high": "High",
+          "full": "Full"
+        }
+      },
+      "auto_air_quality_control": {
+        "name": "Auto air quality control",
+        "state": {
+          "off": "Off",
+          "user": "User",
+          "low": "Low",
+          "normal": "Normal",
+          "high": "High",
+          "full": "Full"
+        }
+      },
+      "temperature_controller_method": {
+        "name": "Temperature controller method",
+        "state": {
+          "supply_air": "Supply air",
+          "room_air": "Room air"
+        }
+      },
+      "summer_night_cooling_control": {
+        "name": "Summer night cooling",
+        "state": {
+          "off": "Off",
+          "low": "Low",
+          "normal": "Normal",
+          "high": "High",
+          "full": "Full",
+          "user": "User"
+        }
+      },
+      "heating_mode": {
+        "name": "Heating mode",
+        "state": {
+          "not_available": "Not available",
+          "eco": "Eco",
+          "comfort": "Comfort"
+        }
+      },
+      "room_temperature_sensor": {
+        "name": "Room temperature sensor",
+        "state": {
+          "internal": "Internal",
+          "t6": "T6",
+          "t7": "T7",
+          "t8": "T8",
+          "t9": "T9",
+          "up1": "UP1",
+          "up2": "UP2"
+        }
+      },
+      "supply_temperature_sensor": {
+        "name": "Supply temperature sensor",
+        "state": {
+          "internal": "Internal",
+          "t6": "T6",
+          "t7": "T7",
+          "t8": "T8",
+          "t9": "T9"
+        }
+      },
+      "outside_temperature_sensor": {
+        "name": "Outside temperature sensor",
+        "state": {
+          "internal": "Internal",
+          "t6": "T6",
+          "t7": "T7",
+          "t8": "T8",
+          "t9": "T9"
+        }
+      },
+      "water_temperature_sensor": {
+        "name": "Water temperature sensor",
+        "state": {
+          "internal": "Internal",
+          "t6": "T6",
+          "t7": "T7",
+          "t8": "T8",
+          "t9": "T9"
+        }
+      },
+      "summer_night_cooling_boost_control": {
+        "name": "Summer night cooling boost",
+        "state": {
+          "off": "Off",
+          "low": "Low",
+          "normal": "Normal",
+          "high": "High",
+          "full": "Full",
+          "user": "User"
+        }
+      }
+    },
+    "number": {
+      "temperature_setpoint": { "name": "Temperature setpoint" },
+      "smart_control": { "name": "Smart control" },
+      "supply_fan_speed_away": { "name": "Supply fan speed (away)" },
+      "exhaust_fan_speed_away": { "name": "Exhaust fan speed (away)" },
+      "supply_fan_speed_home": { "name": "Supply fan speed (home)" },
+      "exhaust_fan_speed_home": { "name": "Exhaust fan speed (home)" },
+      "supply_fan_speed_boost": { "name": "Supply fan speed (boost)" },
+      "exhaust_fan_speed_boost": { "name": "Exhaust fan speed (boost)" },
+      "max_smart_boost": { "name": "Maximum smart boost" },
+      "fireplace_run_time": { "name": "Fireplace run time" },
+      "fireplace_max_speed_diff": { "name": "Fireplace max speed difference" },
+      "travelling_speed_drop": { "name": "Travelling speed drop" },
+      "travelling_temp_drop": { "name": "Travelling temperature drop" },
+      "away_temp_drop": { "name": "Away temperature drop" },
+      "co2_home_limit": { "name": "CO\u2082 home limit" },
+      "co2_away_limit": { "name": "CO\u2082 away limit" },
+      "rh_boost_limit": { "name": "Humidity boost limit" },
+      "rh_full_boost_limit": { "name": "Humidity full boost limit" },
+      "voc_boost_limit": { "name": "VOC boost limit" },
+      "voc_full_boost_limit": { "name": "VOC full boost limit" },
+      "summer_cooling_fresh_air_limit": {
+        "name": "Summer cooling fresh air limit"
+      },
+      "summer_cooling_room_temp_limit": {
+        "name": "Summer cooling room temperature limit"
+      },
+      "summer_cooling_min_supply_temp": {
+        "name": "Summer cooling minimum supply temperature"
+      },
+      "summer_cooling_boost_room_limit": {
+        "name": "Summer cooling boost room limit"
+      },
+      "summer_cooling_full_boost_room_limit": {
+        "name": "Summer cooling full boost room limit"
+      },
+      "summer_cooling_fresh_air_start_limit": {
+        "name": "Summer cooling fresh air start limit"
+      },
+      "cooker_hood_home_compensation": {
+        "name": "Cooker hood home compensation"
+      },
+      "cooker_hood_boost_compensation": {
+        "name": "Cooker hood boost compensation"
+      },
+      "cooker_hood_boost_speed": { "name": "Cooker hood boost speed" },
+      "central_vacuum_run_time": { "name": "Central vacuum run time" },
+      "central_vacuum_compensation": { "name": "Central vacuum compensation" },
+      "rh_boost_delay": { "name": "Humidity boost delay" },
+      "rh_boost_during_delay": { "name": "Humidity boost during delay" },
+      "heating_boost_gain": { "name": "Heating boost gain" },
+      "heating_fresh_air_limit": { "name": "Heating fresh air limit" },
+      "room_temp_fine_tuning": { "name": "Room temperature fine tuning" },
+      "room_control_supply_min": { "name": "Room control supply minimum" },
+      "room_control_supply_max": { "name": "Room control supply maximum" },
+      "cooling_fresh_air_limit": { "name": "Cooling fresh air limit" },
+      "room_control_cooling_min": { "name": "Room control cooling minimum" },
+      "room_control_cooling_max": { "name": "Room control cooling maximum" },
+      "external_preheating_fresh_air_limit": {
+        "name": "External preheating fresh air limit"
+      },
+      "external_precooling_fresh_air_limit": {
+        "name": "External precooling fresh air limit"
+      },
+      "supply_temp_fine_tuning": { "name": "Supply temperature fine tuning" }
+    },
+    "button": {
+      "reset_all_alarms": { "name": "Reset all alarms" },
+      "activate_fireplace": { "name": "Activate fireplace" },
+      "confirm_reheater_alarm": { "name": "Confirm reheater alarm" },
+      "confirm_preheater_alarm": { "name": "Confirm preheater alarm" },
+      "confirm_freezing_alarm": { "name": "Confirm freezing alarm" },
+      "confirm_filter_alarm": { "name": "Confirm filter alarm" },
+      "confirm_service_alarm": { "name": "Confirm service alarm" },
+      "confirm_fan_alarm": { "name": "Confirm fan alarm" },
+      "confirm_sensor_alarm": { "name": "Confirm sensor alarm" }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Could not establish a Modbus connection. Check your serial port path and wiring."
+    },
+    "connection_lost": {
+      "message": "Modbus connection lost during polling: {error}"
+    },
+    "write_failed": {
+      "message": "Failed to write to a Modbus holding register. Check your connection and device address."
+    },
+    "unknown_option": {
+      "message": "The selected option is not recognised by the device."
+    }
+  }
+}

@@ -1,0 +1,618 @@
+##############################################################################
+# Swegon CASA – Home Assistant Dashboard
+#
+# Entity IDs follow the pattern: {platform}.swegon_casa_{key}
+# where {key} is the entity's suggested_object_id (= description.key).
+# If your device was renamed during setup, replace "swegon_casa" with the
+# lower-case, underscore-separated version of your device name.
+##############################################################################
+
+views:
+
+  ##########################################################################
+  # VIEW 1 — OVERVIEW
+  ##########################################################################
+  - title: Overview
+    path: overview
+    icon: mdi:home-thermometer-outline
+    cards:
+
+      # ── Status & Mode ────────────────────────────────────────────────────
+      - type: entities
+        title: Status
+        icon: mdi:information-outline
+        state_color: true
+        entities:
+          - entity: sensor.swegon_casa_unit_state
+            name: Unit state
+            icon: mdi:power
+          - entity: sensor.swegon_casa_operating_mode_status
+            name: Operating mode
+            icon: mdi:fan
+          - entity: sensor.swegon_casa_boost_time_left
+            name: Boost time left
+            icon: mdi:timer-outline
+
+      # ── Alarm & Service Alerts ───────────────────────────────────────────
+      - type: horizontal-stack
+        cards:
+          - type: entity
+            entity: binary_sensor.swegon_casa_alarm_active
+            name: Alarm
+            icon: mdi:alarm-light
+            state_color: true
+          - type: entity
+            entity: binary_sensor.swegon_casa_filter_guard_active
+            name: Filter
+            icon: mdi:air-filter
+            state_color: true
+          - type: entity
+            entity: binary_sensor.swegon_casa_service_info
+            name: Service
+            icon: mdi:wrench
+            state_color: true
+          - type: entity
+            entity: binary_sensor.swegon_casa_combined_alarm
+            name: Combined alarm
+            icon: mdi:bell-alert
+            state_color: true
+
+      # ── Quick Controls ───────────────────────────────────────────────────
+      - type: entities
+        title: Quick Controls
+        icon: mdi:tune
+        entities:
+          - entity: select.swegon_casa_operating_mode
+            name: Operating mode
+            icon: mdi:fan
+          - entity: number.swegon_casa_temperature_setpoint
+            name: Temperature setpoint
+            icon: mdi:thermometer
+          - entity: button.swegon_casa_activate_fireplace
+            name: Activate fireplace
+            icon: mdi:fireplace
+
+      # ── Temperatures ─────────────────────────────────────────────────────
+      - type: glance
+        title: Temperatures
+        columns: 3
+        show_state: true
+        entities:
+          - entity: sensor.swegon_casa_fresh_air_temp
+            name: Fresh air
+          - entity: sensor.swegon_casa_supply_air_temp
+            name: Supply air
+          - entity: sensor.swegon_casa_extract_air_temp
+            name: Extract air
+          - entity: sensor.swegon_casa_exhaust_air_temp
+            name: Exhaust air
+          - entity: sensor.swegon_casa_room_air_temp
+            name: Room air
+          - entity: sensor.swegon_casa_supply_air_before_reheater_temp
+            name: Pre-reheater
+
+      # ── Air Quality ──────────────────────────────────────────────────────
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            entity: sensor.swegon_casa_co2
+            name: CO₂
+            min: 0
+            max: 2000
+            needle: true
+            severity:
+              green: 0
+              yellow: 800
+              red: 1200
+          - type: gauge
+            entity: sensor.swegon_casa_humidity
+            name: Humidity
+            min: 0
+            max: 100
+            needle: true
+            severity:
+              green: 30
+              yellow: 60
+              red: 80
+          - type: gauge
+            entity: sensor.swegon_casa_voc
+            name: VOC
+            min: 0
+            max: 2000
+            needle: true
+            severity:
+              green: 0
+              yellow: 500
+              red: 1000
+
+      # ── Airflow & Pressure ───────────────────────────────────────────────
+      - type: horizontal-stack
+        cards:
+          - type: entities
+            title: Airflow
+            entities:
+              - entity: sensor.swegon_casa_supply_air_flow
+                name: Supply
+                icon: mdi:arrow-right-bold
+              - entity: sensor.swegon_casa_exhaust_air_flow
+                name: Exhaust
+                icon: mdi:arrow-left-bold
+          - type: entities
+            title: Duct Pressure
+            entities:
+              - entity: sensor.swegon_casa_supply_duct_pressure
+                name: Supply
+                icon: mdi:gauge
+              - entity: sensor.swegon_casa_exhaust_duct_pressure
+                name: Exhaust
+                icon: mdi:gauge
+
+      # ── Fans ─────────────────────────────────────────────────────────────
+      - type: glance
+        title: Fans & Rotor
+        columns: 3
+        show_state: true
+        entities:
+          - entity: sensor.swegon_casa_supply_fan_speed
+            name: Supply fan
+          - entity: sensor.swegon_casa_extract_fan_speed
+            name: Extract fan
+          - entity: sensor.swegon_casa_rotor_rpm
+            name: Rotor
+          - entity: sensor.swegon_casa_supply_fan_control
+            name: Supply ctrl
+          - entity: sensor.swegon_casa_exhaust_fan_control
+            name: Exhaust ctrl
+
+      # ── Active Functions ─────────────────────────────────────────────────
+      - type: glance
+        title: Active Functions
+        columns: 4
+        state_color: true
+        entities:
+          - entity: binary_sensor.swegon_casa_cooling_control_active
+            name: Cooling
+            icon: mdi:snowflake
+          - entity: binary_sensor.swegon_casa_summer_cooling_active
+            name: Summer cool
+            icon: mdi:weather-sunny
+          - entity: binary_sensor.swegon_casa_preheater_active
+            name: Preheater
+            icon: mdi:heating-coil
+          - entity: binary_sensor.swegon_casa_rotor_active
+            name: Rotor
+            icon: mdi:rotate-3d-variant
+          - entity: binary_sensor.swegon_casa_fireplace_active
+            name: Fireplace
+            icon: mdi:fireplace
+          - entity: binary_sensor.swegon_casa_hood_compensation_active
+            name: Hood
+            icon: mdi:stove
+          - entity: binary_sensor.swegon_casa_week_timer_active
+            name: Week timer
+            icon: mdi:calendar-clock
+          - entity: binary_sensor.swegon_casa_travelling_active
+            name: Travelling
+            icon: mdi:airplane
+          - entity: binary_sensor.swegon_casa_central_vacuum_active
+            name: Vacuum
+            icon: mdi:robot-vacuum
+          - entity: binary_sensor.swegon_casa_external_boost_active
+            name: Ext. boost
+            icon: mdi:fan-plus
+          - entity: binary_sensor.swegon_casa_external_away_active
+            name: Ext. away
+            icon: mdi:home-export-outline
+
+      # ── Heat Exchanger ───────────────────────────────────────────────────
+      - type: entities
+        title: Heat Exchanger
+        icon: mdi:heat-wave
+        entities:
+          - entity: sensor.swegon_casa_heat_exchanger_bypass
+            name: Bypass position
+            icon: mdi:valve
+          - entity: sensor.swegon_casa_heat_exchanger_bypass_auto
+            name: Bypass auto %
+            icon: mdi:auto-mode
+          - entity: sensor.swegon_casa_defrost_status
+            name: Defrost status
+            icon: mdi:snowflake-melt
+
+  ##########################################################################
+  # VIEW 2 — CONTROLS
+  ##########################################################################
+  - title: Controls
+    path: controls
+    icon: mdi:tune
+
+    cards:
+
+      # ── Mode & Temperature ───────────────────────────────────────────────
+      - type: entities
+        title: Mode & Temperature
+        icon: mdi:thermostat
+        entities:
+          - entity: select.swegon_casa_operating_mode
+            name: Operating mode
+          - entity: number.swegon_casa_temperature_setpoint
+            name: Temperature setpoint
+          - entity: select.swegon_casa_heating_mode
+            name: Heating mode
+          - entity: select.swegon_casa_temperature_controller_method
+            name: Temp. controller method
+          - entity: switch.swegon_casa_heating_boost_control
+            name: Heating boost
+          - entity: number.swegon_casa_heating_boost_gain
+            name: Heating boost gain
+          - entity: number.swegon_casa_heating_fresh_air_limit
+            name: Heating fresh air limit
+          - entity: number.swegon_casa_room_temp_fine_tuning
+            name: Room temp fine tuning
+          - entity: number.swegon_casa_supply_temp_fine_tuning
+            name: Supply temp fine tuning
+
+      # ── Fan Speeds ───────────────────────────────────────────────────────
+      - type: entities
+        title: Fan Speeds
+        icon: mdi:fan
+        entities:
+          - type: section
+            label: Away mode
+          - entity: number.swegon_casa_supply_fan_speed_away
+            name: Supply fan (away)
+          - entity: number.swegon_casa_exhaust_fan_speed_away
+            name: Exhaust fan (away)
+          - type: section
+            label: Home mode
+          - entity: number.swegon_casa_supply_fan_speed_home
+            name: Supply fan (home)
+          - entity: number.swegon_casa_exhaust_fan_speed_home
+            name: Exhaust fan (home)
+          - type: section
+            label: Boost mode
+          - entity: number.swegon_casa_supply_fan_speed_boost
+            name: Supply fan (boost)
+          - entity: number.swegon_casa_exhaust_fan_speed_boost
+            name: Exhaust fan (boost)
+          - entity: number.swegon_casa_max_smart_boost
+            name: Max smart boost
+          - entity: number.swegon_casa_smart_control
+            name: Smart control override
+
+      # ── Auto Quality Controls ────────────────────────────────────────────
+      - type: entities
+        title: Auto Quality Control
+        icon: mdi:air-purifier
+        entities:
+          - entity: switch.swegon_casa_auto_home_away_boost
+            name: Auto home/away/boost (CO₂)
+          - entity: select.swegon_casa_auto_humidity_control
+            name: Auto humidity control
+          - entity: select.swegon_casa_auto_air_quality_control
+            name: Auto air quality (VOC) control
+          - type: section
+            label: CO₂ limits
+          - entity: number.swegon_casa_co2_home_limit
+            name: CO₂ home limit
+          - entity: number.swegon_casa_co2_away_limit
+            name: CO₂ away limit
+          - type: section
+            label: Humidity limits
+          - entity: number.swegon_casa_rh_boost_limit
+            name: RH boost limit
+          - entity: number.swegon_casa_rh_full_boost_limit
+            name: RH full boost limit
+          - entity: number.swegon_casa_rh_boost_delay
+            name: RH boost delay
+          - entity: number.swegon_casa_rh_boost_during_delay
+            name: RH boost during delay
+          - type: section
+            label: VOC limits
+          - entity: number.swegon_casa_voc_boost_limit
+            name: VOC boost limit
+          - entity: number.swegon_casa_voc_full_boost_limit
+            name: VOC full boost limit
+
+      # ── Travelling & Away ────────────────────────────────────────────────
+      - type: entities
+        title: Travelling & Away
+        icon: mdi:airplane
+        entities:
+          - entity: switch.swegon_casa_travelling_mode
+            name: Travelling mode
+          - entity: number.swegon_casa_travelling_speed_drop
+            name: Travelling speed drop
+          - entity: number.swegon_casa_travelling_temp_drop
+            name: Travelling temp drop
+          - entity: number.swegon_casa_away_temp_drop
+            name: Away temp drop
+
+      # ── Summer Night Cooling ─────────────────────────────────────────────
+      - type: entities
+        title: Summer Night Cooling
+        icon: mdi:weather-night
+        entities:
+          - entity: select.swegon_casa_summer_night_cooling_control
+            name: Summer night cooling
+          - entity: select.swegon_casa_summer_night_cooling_boost_control
+            name: Summer cooling boost mode
+          - entity: switch.swegon_casa_summer_cooling_cooker_hood_damper
+            name: Open hood damper during night cooling
+          - type: section
+            label: Temperature limits
+          - entity: number.swegon_casa_summer_cooling_fresh_air_limit
+            name: Fresh air activation limit
+          - entity: number.swegon_casa_summer_cooling_fresh_air_start_limit
+            name: Fresh air start limit
+          - entity: number.swegon_casa_summer_cooling_room_temp_limit
+            name: Room temp activation limit
+          - entity: number.swegon_casa_summer_cooling_min_supply_temp
+            name: Min supply temp
+          - entity: number.swegon_casa_summer_cooling_boost_room_limit
+            name: Boost room limit
+          - entity: number.swegon_casa_summer_cooling_full_boost_room_limit
+            name: Full boost room limit
+
+      # ── Special Functions ────────────────────────────────────────────────
+      - type: horizontal-stack
+        cards:
+          - type: entities
+            title: Fireplace
+            icon: mdi:fireplace
+            entities:
+              - entity: button.swegon_casa_activate_fireplace
+                name: Activate fireplace
+              - entity: number.swegon_casa_fireplace_run_time
+                name: Run time
+              - entity: number.swegon_casa_fireplace_max_speed_diff
+                name: Max speed diff
+
+          - type: entities
+            title: Cooker Hood
+            icon: mdi:stove
+            entities:
+              - entity: switch.swegon_casa_cooker_hood_function
+                name: Hood function enabled
+              - entity: switch.swegon_casa_cooker_hood_damper
+                name: Damper open
+              - entity: number.swegon_casa_cooker_hood_home_compensation
+                name: Home compensation
+              - entity: number.swegon_casa_cooker_hood_boost_compensation
+                name: Boost compensation
+              - entity: number.swegon_casa_cooker_hood_boost_speed
+                name: Boost fan speed
+
+      - type: entities
+        title: Central Vacuum Cleaner
+        icon: mdi:robot-vacuum
+        entities:
+          - entity: switch.swegon_casa_central_vacuum_cleaner
+            name: Central vacuum
+          - entity: number.swegon_casa_central_vacuum_run_time
+            name: Run time
+          - entity: number.swegon_casa_central_vacuum_compensation
+            name: Fan compensation
+
+      # ── Advanced Heating/Cooling ─────────────────────────────────────────
+      - type: entities
+        title: Room Temperature Control
+        icon: mdi:thermostat-box
+        entities:
+          - entity: select.swegon_casa_room_temperature_sensor
+            name: Room temp sensor
+          - entity: select.swegon_casa_supply_temperature_sensor
+            name: Supply temp sensor
+          - entity: select.swegon_casa_outside_temperature_sensor
+            name: Outside temp sensor
+          - entity: select.swegon_casa_water_temperature_sensor
+            name: Water temp sensor
+          - type: section
+            label: Supply setpoint range (heating)
+          - entity: number.swegon_casa_room_control_supply_min
+            name: Supply min
+          - entity: number.swegon_casa_room_control_supply_max
+            name: Supply max
+          - type: section
+            label: Supply setpoint range (cooling)
+          - entity: number.swegon_casa_room_control_cooling_min
+            name: Cooling min
+          - entity: number.swegon_casa_room_control_cooling_max
+            name: Cooling max
+          - entity: number.swegon_casa_cooling_fresh_air_limit
+            name: Cooling fresh air limit
+
+      # ── External Accessories ─────────────────────────────────────────────
+      - type: entities
+        title: External Accessories
+        icon: mdi:connection
+        entities:
+          - entity: switch.swegon_casa_internal_post_heater
+            name: Internal post heater (reheater)
+          - entity: switch.swegon_casa_external_cooling
+            name: External cooling
+          - entity: switch.swegon_casa_external_post_heater
+            name: External post heater
+          - entity: switch.swegon_casa_external_liquid_coil
+            name: External liquid coil
+          - entity: switch.swegon_casa_external_electrical_preheater
+            name: External electrical preheater
+          - entity: number.swegon_casa_external_preheating_fresh_air_limit
+            name: External preheating limit
+          - entity: number.swegon_casa_external_precooling_fresh_air_limit
+            name: External precooling limit
+
+  ##########################################################################
+  # VIEW 3 — DIAGNOSTICS
+  ##########################################################################
+  - title: Diagnostics
+    path: diagnostics
+    icon: mdi:stethoscope
+
+    cards:
+
+      # ── Service Status ───────────────────────────────────────────────────
+      - type: entities
+        title: Service & Maintenance
+        icon: mdi:wrench-clock
+        entities:
+          - entity: sensor.swegon_casa_hours_to_service
+            name: Hours to service
+            icon: mdi:clock-alert-outline
+          - entity: binary_sensor.swegon_casa_service_info
+            name: Service reminder
+            icon: mdi:wrench
+          - entity: binary_sensor.swegon_casa_filter_guard_active
+            name: Filter guard
+            icon: mdi:air-filter
+
+      # ── Alarm Overview ───────────────────────────────────────────────────
+      - type: entities
+        title: Alarms & Info
+        icon: mdi:bell-alert
+        state_color: true
+        entities:
+          - entity: binary_sensor.swegon_casa_alarm_active
+            name: Alarm active
+            icon: mdi:alarm-light
+          - entity: binary_sensor.swegon_casa_combined_alarm
+            name: Combined alarm
+            icon: mdi:bell-badge
+          - entity: binary_sensor.swegon_casa_info_active
+            name: Info active
+            icon: mdi:information
+          - entity: binary_sensor.swegon_casa_combined_info
+            name: Combined info
+            icon: mdi:information-outline
+
+      # ── Alarm Confirmation ───────────────────────────────────────────────
+      - type: entities
+        title: Confirm / Reset Alarms
+        icon: mdi:check-circle
+        entities:
+          - entity: button.swegon_casa_reset_all_alarms
+            name: Reset all alarms
+            icon: mdi:restart-alert
+          - type: section
+            label: Confirm individual alarms
+          - entity: button.swegon_casa_confirm_filter_alarm
+            name: Confirm filter alarm
+            icon: mdi:air-filter
+          - entity: button.swegon_casa_confirm_service_alarm
+            name: Confirm service alarm
+            icon: mdi:wrench
+          - entity: button.swegon_casa_confirm_fan_alarm
+            name: Confirm fan alarm
+            icon: mdi:fan-alert
+          - entity: button.swegon_casa_confirm_sensor_alarm
+            name: Confirm sensor alarm
+            icon: mdi:thermometer-alert
+          - entity: button.swegon_casa_confirm_reheater_alarm
+            name: Confirm reheater alarm
+            icon: mdi:heating-coil
+          - entity: button.swegon_casa_confirm_preheater_alarm
+            name: Confirm preheater alarm
+            icon: mdi:radiator
+          - entity: button.swegon_casa_confirm_freezing_alarm
+            name: Confirm freezing alarm
+            icon: mdi:snowflake-alert
+          - type: section
+            label: Safety
+          - entity: select.swegon_casa_emergency_stop
+            name: Emergency stop
+            icon: mdi:alert-octagon
+
+      # ── Mechanical Status ────────────────────────────────────────────────
+      - type: entities
+        title: Mechanical Status
+        icon: mdi:cog
+        entities:
+          - entity: sensor.swegon_casa_defrost_status
+            name: Defrost status
+            icon: mdi:snowflake-melt
+          - entity: sensor.swegon_casa_heat_exchanger_bypass
+            name: HX bypass position
+            icon: mdi:valve
+          - entity: sensor.swegon_casa_heat_exchanger_bypass_auto
+            name: HX bypass auto %
+          - entity: sensor.swegon_casa_preheater_output_power
+            name: Preheater output
+          - entity: sensor.swegon_casa_nordic_preheater_power
+            name: Nordic preheater
+          - entity: sensor.swegon_casa_defrost_supply_limit
+            name: Defrost supply limit
+          - entity: sensor.swegon_casa_defrost_exhaust_forcing
+            name: Defrost exhaust forcing
+          - entity: binary_sensor.swegon_casa_rotor_active
+            name: Rotor active
+          - entity: binary_sensor.swegon_casa_preheater_active
+            name: Preheater active
+
+      # ── Control Outputs (internal) ───────────────────────────────────────
+      - type: entities
+        title: Control Outputs
+        icon: mdi:chart-line
+        entities:
+          - entity: sensor.swegon_casa_supply_control_power
+            name: Supply control power
+          - entity: sensor.swegon_casa_smart_control_output
+            name: Smart control output
+          - entity: sensor.swegon_casa_room_controller_supply_setpoint
+            name: Room controller supply setpoint
+          - entity: sensor.swegon_casa_fan_speed_limit_control
+            name: Fan speed limit control
+          - entity: sensor.swegon_casa_auto_co2_control
+            name: Auto CO₂ control output
+          - entity: sensor.swegon_casa_auto_rh_control
+            name: Auto humidity control output
+          - entity: sensor.swegon_casa_auto_air_quality_control_output
+            name: Auto air quality output
+          - entity: sensor.swegon_casa_auto_temp_boost_control
+            name: Auto temp boost output
+
+      # ── All Temperatures ─────────────────────────────────────────────────
+      - type: glance
+        title: All Temperature Sensors
+        columns: 3
+        show_state: true
+        entities:
+          - entity: sensor.swegon_casa_fresh_air_temp
+            name: Fresh air
+          - entity: sensor.swegon_casa_supply_air_temp
+            name: Supply air
+          - entity: sensor.swegon_casa_extract_air_temp
+            name: Extract air
+          - entity: sensor.swegon_casa_exhaust_air_temp
+            name: Exhaust air
+          - entity: sensor.swegon_casa_room_air_temp
+            name: Room air
+          - entity: sensor.swegon_casa_supply_air_before_reheater_temp
+            name: Pre-reheater
+          - entity: sensor.swegon_casa_user_panel_1_temp
+            name: Panel 1
+          - entity: sensor.swegon_casa_user_panel_2_temp
+            name: Panel 2
+          - entity: sensor.swegon_casa_water_radiator_temp
+            name: Water rad.
+          - entity: sensor.swegon_casa_preheater_temp
+            name: Preheater
+          - entity: sensor.swegon_casa_external_fresh_air_temp
+            name: Ext. fresh air
+          - entity: sensor.swegon_casa_absolute_humidity
+            name: Abs. humidity
+          - entity: sensor.swegon_casa_absolute_humidity_setpoint
+            name: Abs. hum. setpoint
+          - entity: sensor.swegon_casa_co2_unfiltered
+            name: CO₂ (raw)
+
+      # ── Firmware ─────────────────────────────────────────────────────────
+      - type: entities
+        title: Firmware & Device Info
+        icon: mdi:chip
+        entities:
+          - entity: sensor.swegon_casa_firmware_version_major
+            name: Firmware major
+          - entity: sensor.swegon_casa_firmware_version_minor
+            name: Firmware minor
+          - entity: sensor.swegon_casa_firmware_build
+            name: Firmware build

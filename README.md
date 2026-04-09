@@ -143,6 +143,29 @@ The integration polls the device every **10 seconds**. If the device becomes unr
 
 ---
 
+## Dashboard
+
+A ready-made Home Assistant dashboard is included in the repository as [`swegon.yaml`](swegon.yaml). It covers three views:
+
+| View | Contents |
+|---|---|
+| **Overview** | Unit state, alarms, temperatures, air quality, airflow, fan/rotor speeds, active functions, heat exchanger |
+| **Controls** | Operating mode, temperature setpoints, per-mode fan speeds, auto quality control, travelling/away, summer night cooling, special functions, room temperature control, external accessories |
+| **Diagnostics** | Service & maintenance status, alarm overview, alarm confirmation, mechanical status, control outputs, all temperature sensors, firmware & device info |
+
+### How to use it
+
+1. In Home Assistant, go to **Settings → Dashboards** and click **Add dashboard**.
+2. Give it a name (e.g. *Swegon CASA*) and confirm.
+3. Open the new dashboard, click the three-dot menu (⋮) in the top-right corner and select **Edit dashboard**.
+4. Click the three-dot menu again and choose **Raw configuration editor**.
+5. Replace all existing content with the contents of [`swegon.yaml`](swegon.yaml) from this repository.
+6. Click **Save** and then **Done**.
+
+> **Note:** Entity IDs in the dashboard follow the pattern `{platform}.swegon_casa_{key}`. If your device was renamed during setup, replace `swegon_casa` with the lower-case, underscore-separated version of your device name throughout the file.
+
+---
+
 ## Removal
 
 1. Go to **Settings → Devices & Services**.

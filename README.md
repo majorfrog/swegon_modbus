@@ -10,12 +10,6 @@ The integration is built on top of [pymodbus](https://github.com/pymodbus-dev/py
 
 ---
 
-## ⚠️ Warning — Modbus external interface
-
-> **By activating the Modbus external interface on your device, you accept full responsibility for any values written through it.** The manufacturer is not liable for issues caused by incorrect or out-of-range values written via Modbus. Such actions may void the warranty and/or negatively affect the lifecycle and performance of the product. Always verify that values are within the specified safe range before writing them.
-
----
-
 ## Use Cases
 
 - **Monitor air quality** — track CO₂, humidity, VOC, and temperature in real time.

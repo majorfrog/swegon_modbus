@@ -21,9 +21,9 @@ CONF_STOPBITS: Final = "stopbits"
 
 # RTU / shared defaults
 DEFAULT_UNIT_ID: Final = 1
-DEFAULT_BAUDRATE: Final = 19200
+DEFAULT_BAUDRATE: Final = 38400
 DEFAULT_BYTESIZE: Final = 8
-DEFAULT_PARITY: Final = "E"
+DEFAULT_PARITY: Final = "N"
 DEFAULT_STOPBITS: Final = 1
 
 # How often the coordinator polls the device (seconds).

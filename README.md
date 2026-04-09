@@ -59,7 +59,7 @@ The integration is built on top of [pymodbus](https://github.com/pymodbus-dev/py
 
 To use this integration with **Modbus RTU** you need something that converts RS-485 to a serial/USB interface, such as a USB-to-RS485 adapter.
 
-On the Swegon CASA unit, the RJ45 port intended for SEC/SEM accessories can also be used for Modbus. If the cable is wired to the 568B standard, the RS-485 connections are:
+On the Swegon CASA unit, the RJ45 port intended for SEC/SEM accessories is used for Modbus. If the cable is wired to the 568B standard, the RS-485 connections are:
 
 | Wire colour  | RS-485 signal |
 |--------------|---------------|
@@ -103,9 +103,9 @@ Add the following to your `configuration.yaml`. If you have multiple devices, us
 swegon_modbus:
   port: /dev/ttyUSB0      # serial device path (Linux) or COM3 (Windows)
   unit_id: 1              # optional — default: 1
-  baudrate: 19200         # optional — default: 19200 (Swegon CASA default)
+  baudrate: 38400         # optional — default: 38400 (Swegon CASA default)
   bytesize: 8             # optional — default: 8  (5/6/7/8)
-  parity: "E"             # optional — default: E  (N=none, E=even, O=odd)
+  parity: "N"             # optional — default: N  (N=none, E=even, O=odd)
   stopbits: 1             # optional — default: 1  (1 or 2)
 ```
 
@@ -128,9 +128,9 @@ swegon_modbus:
 |---|---|---|---|
 | `port` | **Yes** | — | Serial device path, e.g. `/dev/ttyUSB0` or `COM3` |
 | `unit_id` | No | `1` | Modbus unit ID, 1–247 |
-| `baudrate` | No | `19200` | Communication speed in bps (Swegon CASA default) |
+| `baudrate` | No | `38400` | Communication speed in bps (Swegon CASA default) |
 | `bytesize` | No | `8` | Number of data bits (5, 6, 7, or 8) |
-| `parity` | No | `E` | Parity: `N` (none), `E` (even), `O` (odd) — Swegon CASA uses `E` |
+| `parity` | No | `N` | Parity: `N` (none), `E` (even), `O` (odd) — Swegon CASA uses `N` |
 | `stopbits` | No | `1` | Number of stop bits (1 or 2) |
 
 ---
@@ -168,18 +168,6 @@ The integration polls the device every **10 seconds**. If the device becomes unr
 | All sensors show `Unknown` after setup | Device connected but wrong unit ID | Verify the unit ID in the Swegon service menu |
 | Values unchanged for a long time | Polling back-off after repeated failures | Check HA logs for connection errors; verify device is reachable |
 | Entities missing after update | Entity registry may be stale | Reload the integration under **Settings → Devices & Services** |
-
----
-
-## Known Limitations
-
-| Limitation | Notes |
-|---|---|
-| Fixed polling interval | The 10-second polling interval is not user-configurable |
-| One unit per config entry | Each Modbus unit ID requires its own config entry |
-| No week-timer programming | The week timer is not exposed via standard Modbus registers |
-| Register availability varies | Some registers (rotor, preheater, etc.) only exist on specific hardware variants and will return 0 on units without those components |
-| No automatic reconnect delay | After a connection failure the integration retries on the next poll cycle |
 
 ---
 

@@ -15,9 +15,9 @@
         "data_description": {
           "port": "Serial device path, e.g. `/dev/ttyUSB0` or `COM3`.",
           "unit_id": "Modbus unit ID of the target device (1\u2013247).",
-          "baudrate": "Communication speed in bps (default: 19200 for Swegon CASA).",
+          "baudrate": "Communication speed in bps (default: 38400 for Swegon CASA).",
           "bytesize": "Number of data bits (typically 8).",
-          "parity": "Parity bit setting (default: E for Swegon CASA).",
+          "parity": "Parity bit setting (default: N for Swegon CASA).",
           "stopbits": "Number of stop bits."
         }
       },

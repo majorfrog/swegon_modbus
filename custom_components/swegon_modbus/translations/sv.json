@@ -15,9 +15,9 @@
         "data_description": {
           "port": "Sökväg till serieenhet, t.ex. `/dev/ttyUSB0` eller `COM3`.",
           "unit_id": "Modbus-enhets-ID för målenheten (1–247).",
-          "baudrate": "Kommunikationshastighet i bps (standard: 19200 för Swegon CASA).",
+          "baudrate": "Kommunikationshastighet i bps (standard: 38400 för Swegon CASA).",
           "bytesize": "Antal databitar (vanligtvis 8).",
-          "parity": "Paritetsinställning (standard: E för Swegon CASA).",
+          "parity": "Paritetsinställning (standard: N för Swegon CASA).",
           "stopbits": "Antal stoppbitar."
         }
       },

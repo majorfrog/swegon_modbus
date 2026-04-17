@@ -46,6 +46,7 @@ from homeassistant.const import (
 )
 
 from .const import (
+    DATA_TYPE_ASCII,
     DATA_TYPE_INT16,
     DATA_TYPE_UINT16,
     INPUT_TYPE_HOLDING,
@@ -68,6 +69,7 @@ class ModbusSensorEntityDescription(SensorEntityDescription):
     address: int = 0
     input_type: str = INPUT_TYPE_INPUT
     data_type: str = DATA_TYPE_INT16
+    register_count: int = 1
     scale: float = 1.0
     precision: int = 0
     value_map: dict[int, str] | None = None
@@ -628,6 +630,29 @@ SENSOR_DESCRIPTIONS: tuple[ModbusSensorEntityDescription, ...] = (
         state_class=None,
         entity_category=EntityCategory.DIAGNOSTIC,
     ),  # 3x6003
+    # -------------------------------------------------------------------------
+    # Device identity — ASCII multi-register reads
+    # -------------------------------------------------------------------------
+    # 3x6008–3x6023: Model name (16 registers, 2 ASCII bytes packed per register)
+    ModbusSensorEntityDescription(
+        key="model_name",
+        translation_key="model_name",
+        address=6007,
+        data_type=DATA_TYPE_ASCII,
+        register_count=16,
+        state_class=None,
+        entity_category=EntityCategory.DIAGNOSTIC,
+    ),
+    # 3x6024–3x6047: Unit serial number (24 registers, 2 ASCII bytes packed per register)
+    ModbusSensorEntityDescription(
+        key="serial_number",
+        translation_key="serial_number",
+        address=6023,
+        data_type=DATA_TYPE_ASCII,
+        register_count=24,
+        state_class=None,
+        entity_category=EntityCategory.DIAGNOSTIC,
+    ),
 )
 
 # ---------------------------------------------------------------------------
@@ -843,6 +868,58 @@ SWITCH_DESCRIPTIONS: tuple[ModbusSwitchEntityDescription, ...] = (
         key="summer_cooling_cooker_hood_damper",
         translation_key="summer_cooling_cooker_hood_damper",
         address=5176,
+        entity_category=EntityCategory.CONFIG,
+    ),
+    # -------------------------------------------------------------------------
+    # Smart function visibility — User Panel display control
+    # -------------------------------------------------------------------------
+    # 4x5201 — Fireplace function visibility in smart functions
+    ModbusSwitchEntityDescription(
+        key="fireplace_smart_visibility",
+        translation_key="fireplace_smart_visibility",
+        address=5200,
+        entity_category=EntityCategory.CONFIG,
+    ),
+    # 4x5202 — Travelling mode visibility in smart functions
+    ModbusSwitchEntityDescription(
+        key="travelling_smart_visibility",
+        translation_key="travelling_smart_visibility",
+        address=5201,
+        entity_category=EntityCategory.CONFIG,
+    ),
+    # 4x5204 — Central vacuum function visibility in smart functions
+    ModbusSwitchEntityDescription(
+        key="central_vacuum_smart_visibility",
+        translation_key="central_vacuum_smart_visibility",
+        address=5203,
+        entity_category=EntityCategory.CONFIG,
+    ),
+    # 4x5205 — Summer night cooling visibility in smart functions
+    ModbusSwitchEntityDescription(
+        key="summer_cooling_smart_visibility",
+        translation_key="summer_cooling_smart_visibility",
+        address=5204,
+        entity_category=EntityCategory.CONFIG,
+    ),
+    # 4x5206 — Heating boost visibility in smart functions
+    ModbusSwitchEntityDescription(
+        key="heating_boost_smart_visibility",
+        translation_key="heating_boost_smart_visibility",
+        address=5205,
+        entity_category=EntityCategory.CONFIG,
+    ),
+    # 4x5207 — Shutdown visibility in smart functions (units with User Panel only)
+    ModbusSwitchEntityDescription(
+        key="shutdown_smart_visibility",
+        translation_key="shutdown_smart_visibility",
+        address=5206,
+        entity_category=EntityCategory.CONFIG,
+    ),
+    # 4x5208 — Auto humidity control visibility in smart functions (SW 3.1+)
+    ModbusSwitchEntityDescription(
+        key="auto_humidity_smart_visibility",
+        translation_key="auto_humidity_smart_visibility",
+        address=5207,
         entity_category=EntityCategory.CONFIG,
     ),
 )

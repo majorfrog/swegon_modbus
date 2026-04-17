@@ -107,6 +107,8 @@
       "firmware_version_major": { "name": "Firmware version (major)" },
       "firmware_version_minor": { "name": "Firmware version (minor)" },
       "firmware_build": { "name": "Firmware build" },
+      "model_name": { "name": "Model name" },
+      "serial_number": { "name": "Serial number" },
       "unit_state": {
         "name": "Unit state",
         "state": {
@@ -163,6 +165,27 @@
       },
       "summer_cooling_cooker_hood_damper": {
         "name": "Summer cooling cooker hood damper"
+      },
+      "fireplace_smart_visibility": {
+        "name": "Fireplace visibility (smart functions)"
+      },
+      "travelling_smart_visibility": {
+        "name": "Travelling visibility (smart functions)"
+      },
+      "central_vacuum_smart_visibility": {
+        "name": "Central vacuum visibility (smart functions)"
+      },
+      "summer_cooling_smart_visibility": {
+        "name": "Summer night cooling visibility (smart functions)"
+      },
+      "heating_boost_smart_visibility": {
+        "name": "Heating boost visibility (smart functions)"
+      },
+      "shutdown_smart_visibility": {
+        "name": "Shutdown visibility (smart functions)"
+      },
+      "auto_humidity_smart_visibility": {
+        "name": "Auto humidity control visibility (smart functions)"
       }
     },
     "select": {

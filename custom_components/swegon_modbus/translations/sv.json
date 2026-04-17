@@ -113,6 +113,8 @@
       "firmware_version_major": { "name": "Firmwareversion (major)" },
       "firmware_version_minor": { "name": "Firmwareversion (minor)" },
       "firmware_build": { "name": "Firmware-byggnummer" },
+      "model_name": { "name": "Modellnamn" },
+      "serial_number": { "name": "Serienummer" },
       "unit_state": {
         "name": "Enhetsstatus",
         "state": {
@@ -169,6 +171,27 @@
       },
       "summer_cooling_cooker_hood_damper": {
         "name": "Sommarkylning spiskåpsspjäll"
+      },
+      "fireplace_smart_visibility": {
+        "name": "Eldstad synlighet (smarta funktioner)"
+      },
+      "travelling_smart_visibility": {
+        "name": "Reseläge synlighet (smarta funktioner)"
+      },
+      "central_vacuum_smart_visibility": {
+        "name": "Centralstömsug synlighet (smarta funktioner)"
+      },
+      "summer_cooling_smart_visibility": {
+        "name": "Sommarkylning synlighet (smarta funktioner)"
+      },
+      "heating_boost_smart_visibility": {
+        "name": "Värmeboost synlighet (smarta funktioner)"
+      },
+      "shutdown_smart_visibility": {
+        "name": "Avstängning synlighet (smarta funktioner)"
+      },
+      "auto_humidity_smart_visibility": {
+        "name": "Auto fuktighetsreglering synlighet (smarta funktioner)"
       }
     },
     "select": {

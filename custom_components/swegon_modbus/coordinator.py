@@ -25,6 +25,7 @@ from .const import (
     CONF_PARITY,
     CONF_UNIT_ID,
     CONF_STOPBITS,
+    DATA_TYPE_ASCII,
     DATA_TYPE_FLOAT32,
     DATA_TYPE_INT16,
     DATA_TYPE_INT32,
@@ -67,6 +68,18 @@ def _decode_registers(registers: list[int], data_type: str) -> int | float:
         (raw_value,) = struct.unpack(">f", struct.pack(">I", raw))
         return float(raw_value)
     raise ValueError(f"Unsupported data_type: {data_type!r}")
+
+
+def _decode_ascii_register(register: int) -> str:
+    """Decode a single 16-bit Modbus register as two packed ASCII bytes.
+
+    The high byte is the first character, the low byte is the second.
+    Only printable ASCII characters (0x20–0x7E) are included; null bytes
+    and non-printable characters are dropped.
+    """
+    high = (register >> 8) & 0xFF
+    low = register & 0xFF
+    return "".join(chr(b) for b in (high, low) if 0x20 <= b <= 0x7E)
 
 
 def _register_count(data_type: str) -> int:
@@ -272,7 +285,29 @@ class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None
     async def _read_sensor(
         self, desc: ModbusSensorEntityDescription
     ) -> float | str | None:
-        """Read a single sensor register and decode the value."""
+        """Read a single sensor register and decode the value.
+
+        For DATA_TYPE_ASCII sensors with register_count > 1 this reads a
+        contiguous block of registers and decodes them as packed ASCII bytes.
+        """
+        if desc.data_type == DATA_TYPE_ASCII:
+            registers = await self._read_registers(
+                desc.key, desc.address, desc.register_count, desc.input_type
+            )
+            if registers is None:
+                return None
+            chars: list[str] = []
+            for reg in registers:
+                chars.append(_decode_ascii_register(reg))
+            result = "".join(chars).strip()
+            _LOGGER.debug(
+                "Read ASCII %s (address %d, %d regs): %r",
+                desc.key,
+                desc.address,
+                desc.register_count,
+                result,
+            )
+            return result or None
         count = _register_count(desc.data_type)
         registers = await self._read_registers(
             desc.key, desc.address, count, desc.input_type
@@ -402,12 +437,18 @@ class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None
             single_reg_sensors = [
                 desc
                 for desc in SENSOR_DESCRIPTIONS
-                if desc.key in enabled_keys and _register_count(desc.data_type) == 1
+                if desc.key in enabled_keys
+                and _register_count(desc.data_type) == 1
+                and desc.data_type != DATA_TYPE_ASCII
             ]
             multi_reg_sensors = [
                 desc
                 for desc in SENSOR_DESCRIPTIONS
-                if desc.key in enabled_keys and _register_count(desc.data_type) > 1
+                if desc.key in enabled_keys
+                and (
+                    _register_count(desc.data_type) > 1
+                    or desc.data_type == DATA_TYPE_ASCII
+                )
             ]
 
             _LOGGER.debug(

@@ -59,7 +59,8 @@ class SwegonModbusSensor(SwegonModbusEntity, SensorEntity):
         assert config_entry is not None
         self._attr_unique_id = f"{config_entry.entry_id}_{description.key}"
         self._attr_device_info = create_device_info(coordinator)
-        self._attr_suggested_display_precision = description.precision
+        if description.precision is not None:
+            self._attr_suggested_display_precision = description.precision
 
     @property
     def available(self) -> bool:

@@ -71,7 +71,7 @@ class ModbusSensorEntityDescription(SensorEntityDescription):
     data_type: str = DATA_TYPE_INT16
     register_count: int = 1
     scale: float = 1.0
-    precision: int = 0
+    precision: int | None = 0
     value_map: dict[int, str] | None = None
     options: list[str] | None = None
 
@@ -640,6 +640,7 @@ SENSOR_DESCRIPTIONS: tuple[ModbusSensorEntityDescription, ...] = (
         address=6007,
         data_type=DATA_TYPE_ASCII,
         register_count=16,
+        precision=None,
         state_class=None,
         entity_category=EntityCategory.DIAGNOSTIC,
     ),
@@ -650,6 +651,7 @@ SENSOR_DESCRIPTIONS: tuple[ModbusSensorEntityDescription, ...] = (
         address=6023,
         data_type=DATA_TYPE_ASCII,
         register_count=24,
+        precision=None,
         state_class=None,
         entity_category=EntityCategory.DIAGNOSTIC,
     ),

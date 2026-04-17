@@ -774,6 +774,296 @@ BINARY_SENSOR_DESCRIPTIONS: tuple[ModbusBinarySensorEntityDescription, ...] = (
         translation_key="external_away_active",
         address=6338,
     ),
+    # -------------------------------------------------------------------------
+    # Individual temperature sensor failures — active (3x6101–3x6108, 3x6134)
+    # -------------------------------------------------------------------------
+    ModbusBinarySensorEntityDescription(
+        key="t1_sensor_failure",
+        translation_key="t1_sensor_failure",
+        address=6100,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t2_sensor_failure",
+        translation_key="t2_sensor_failure",
+        address=6101,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t3_sensor_failure",
+        translation_key="t3_sensor_failure",
+        address=6102,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t4_sensor_failure",
+        translation_key="t4_sensor_failure",
+        address=6103,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t5_sensor_failure",
+        translation_key="t5_sensor_failure",
+        address=6104,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t6_sensor_failure",
+        translation_key="t6_sensor_failure",
+        address=6105,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t7_sensor_failure",
+        translation_key="t7_sensor_failure",
+        address=6106,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t8_sensor_failure",
+        translation_key="t8_sensor_failure",
+        address=6107,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6134
+        key="t9_sensor_failure",
+        translation_key="t9_sensor_failure",
+        address=6133,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    # -------------------------------------------------------------------------
+    # Individual temperature sensor failures — unconfirmed (3x6109–3x6116, 3x6135)
+    # -------------------------------------------------------------------------
+    ModbusBinarySensorEntityDescription(
+        key="t1_sensor_failure_unconfirmed",
+        translation_key="t1_sensor_failure_unconfirmed",
+        address=6108,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t2_sensor_failure_unconfirmed",
+        translation_key="t2_sensor_failure_unconfirmed",
+        address=6109,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t3_sensor_failure_unconfirmed",
+        translation_key="t3_sensor_failure_unconfirmed",
+        address=6110,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t4_sensor_failure_unconfirmed",
+        translation_key="t4_sensor_failure_unconfirmed",
+        address=6111,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t5_sensor_failure_unconfirmed",
+        translation_key="t5_sensor_failure_unconfirmed",
+        address=6112,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t6_sensor_failure_unconfirmed",
+        translation_key="t6_sensor_failure_unconfirmed",
+        address=6113,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t7_sensor_failure_unconfirmed",
+        translation_key="t7_sensor_failure_unconfirmed",
+        address=6114,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(
+        key="t8_sensor_failure_unconfirmed",
+        translation_key="t8_sensor_failure_unconfirmed",
+        address=6115,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6135 — auto-confirmed by device
+        key="t9_sensor_failure_unconfirmed",
+        translation_key="t9_sensor_failure_unconfirmed",
+        address=6134,
+        entity_registry_enabled_default=False,
+    ),
+    # -------------------------------------------------------------------------
+    # Heater / freezing alarms (3x6117–3x6122)
+    # -------------------------------------------------------------------------
+    ModbusBinarySensorEntityDescription(  # 3x6117
+        key="afterheater_failure",
+        translation_key="afterheater_failure",
+        address=6116,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6118
+        key="afterheater_failure_unconfirmed",
+        translation_key="afterheater_failure_unconfirmed",
+        address=6117,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6119
+        key="preheater_failure",
+        translation_key="preheater_failure",
+        address=6118,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6120
+        key="preheater_failure_unconfirmed",
+        translation_key="preheater_failure_unconfirmed",
+        address=6119,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6121
+        key="freezing_danger",
+        translation_key="freezing_danger",
+        address=6120,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6122
+        key="freezing_danger_unconfirmed",
+        translation_key="freezing_danger_unconfirmed",
+        address=6121,
+        entity_registry_enabled_default=False,
+    ),
+    # -------------------------------------------------------------------------
+    # Internal temperature / fan alarms (3x6123–3x6128)
+    # -------------------------------------------------------------------------
+    ModbusBinarySensorEntityDescription(  # 3x6123
+        key="internal_temp_alarm",
+        translation_key="internal_temp_alarm",
+        address=6122,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6124
+        key="internal_temp_alarm_unconfirmed",
+        translation_key="internal_temp_alarm_unconfirmed",
+        address=6123,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6125
+        key="supply_fan_failure",
+        translation_key="supply_fan_failure",
+        address=6124,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6126
+        key="supply_fan_failure_unconfirmed",
+        translation_key="supply_fan_failure_unconfirmed",
+        address=6125,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6127
+        key="exhaust_fan_failure",
+        translation_key="exhaust_fan_failure",
+        address=6126,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6128
+        key="exhaust_fan_failure_unconfirmed",
+        translation_key="exhaust_fan_failure_unconfirmed",
+        address=6127,
+        entity_registry_enabled_default=False,
+    ),
+    # -------------------------------------------------------------------------
+    # Filter / emergency stop (3x6130–3x6131)
+    # -------------------------------------------------------------------------
+    ModbusBinarySensorEntityDescription(  # 3x6130
+        key="filter_guard_unconfirmed",
+        translation_key="filter_guard_unconfirmed",
+        address=6129,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6131
+        key="emergency_stop_active",
+        translation_key="emergency_stop_active",
+        address=6130,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+    ),
+    # -------------------------------------------------------------------------
+    # Supply / preheater temperature alarms (3x6141–3x6146)
+    # -------------------------------------------------------------------------
+    ModbusBinarySensorEntityDescription(  # 3x6141
+        key="preheater_temp_high",
+        translation_key="preheater_temp_high",
+        address=6140,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6142
+        key="preheater_temp_high_unconfirmed",
+        translation_key="preheater_temp_high_unconfirmed",
+        address=6141,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6143
+        key="supply_temp_low",
+        translation_key="supply_temp_low",
+        address=6142,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6144
+        key="supply_temp_low_unconfirmed",
+        translation_key="supply_temp_low_unconfirmed",
+        address=6143,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6145
+        key="supply_temp_high",
+        translation_key="supply_temp_high",
+        address=6144,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6146
+        key="supply_temp_high_unconfirmed",
+        translation_key="supply_temp_high_unconfirmed",
+        address=6145,
+        entity_registry_enabled_default=False,
+    ),
+    # -------------------------------------------------------------------------
+    # Rotor / fan control alarms (3x6147–3x6150, SW 3.1+ where noted)
+    # -------------------------------------------------------------------------
+    ModbusBinarySensorEntityDescription(  # 3x6147 — SW 3.1+
+        key="rotor_alarm",
+        translation_key="rotor_alarm",
+        address=6146,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6148 — SW 3.1+
+        key="rotor_alarm_unconfirmed",
+        translation_key="rotor_alarm_unconfirmed",
+        address=6147,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6149
+        key="fan_control_alarm",
+        translation_key="fan_control_alarm",
+        address=6148,
+        device_class=BinarySensorDeviceClass.PROBLEM,
+        entity_registry_enabled_default=False,
+    ),
+    ModbusBinarySensorEntityDescription(  # 3x6150 — SW 3.1+
+        key="fan_control_alarm_unconfirmed",
+        translation_key="fan_control_alarm_unconfirmed",
+        address=6149,
+        entity_registry_enabled_default=False,
+    ),
 )
 
 # ---------------------------------------------------------------------------

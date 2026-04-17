@@ -153,7 +153,85 @@
       "central_vacuum_active": { "name": "Centralstömsug aktiv" },
       "hood_compensation_active": { "name": "Huv-kompensation aktiv" },
       "external_boost_active": { "name": "Extern boost aktiv" },
-      "external_away_active": { "name": "Externt bortaläge aktivt" }
+      "external_away_active": { "name": "Externt bortaläge aktivt" },
+      "t1_sensor_failure": { "name": "T1 temperatursensorfel" },
+      "t2_sensor_failure": { "name": "T2 temperatursensorfel" },
+      "t3_sensor_failure": { "name": "T3 temperatursensorfel" },
+      "t4_sensor_failure": { "name": "T4 temperatursensorfel" },
+      "t5_sensor_failure": { "name": "T5 temperatursensorfel" },
+      "t6_sensor_failure": { "name": "T6 temperatursensorfel" },
+      "t7_sensor_failure": { "name": "T7 temperatursensorfel" },
+      "t8_sensor_failure": { "name": "T8 temperatursensorfel" },
+      "t9_sensor_failure": { "name": "T9 temperatursensorfel" },
+      "t1_sensor_failure_unconfirmed": {
+        "name": "T1 temperatursensorfel (obekräftat)"
+      },
+      "t2_sensor_failure_unconfirmed": {
+        "name": "T2 temperatursensorfel (obekräftat)"
+      },
+      "t3_sensor_failure_unconfirmed": {
+        "name": "T3 temperatursensorfel (obekräftat)"
+      },
+      "t4_sensor_failure_unconfirmed": {
+        "name": "T4 temperatursensorfel (obekräftat)"
+      },
+      "t5_sensor_failure_unconfirmed": {
+        "name": "T5 temperatursensorfel (obekräftat)"
+      },
+      "t6_sensor_failure_unconfirmed": {
+        "name": "T6 temperatursensorfel (obekräftat)"
+      },
+      "t7_sensor_failure_unconfirmed": {
+        "name": "T7 temperatursensorfel (obekräftat)"
+      },
+      "t8_sensor_failure_unconfirmed": {
+        "name": "T8 temperatursensorfel (obekräftat)"
+      },
+      "t9_sensor_failure_unconfirmed": {
+        "name": "T9 temperatursensorfel (obekräftat)"
+      },
+      "afterheater_failure": { "name": "Eftervärmare fel" },
+      "afterheater_failure_unconfirmed": {
+        "name": "Eftervärmare fel (obekräftat)"
+      },
+      "preheater_failure": { "name": "Förvärmare fel" },
+      "preheater_failure_unconfirmed": {
+        "name": "Förvärmare fel (obekräftat)"
+      },
+      "freezing_danger": { "name": "Frysrisk" },
+      "freezing_danger_unconfirmed": { "name": "Frysrisk (obekräftad)" },
+      "internal_temp_alarm": { "name": "Intern temperaturlarm" },
+      "internal_temp_alarm_unconfirmed": {
+        "name": "Intern temperaturlarm (obekräftat)"
+      },
+      "supply_fan_failure": { "name": "Tilluftsfläkt fel" },
+      "supply_fan_failure_unconfirmed": {
+        "name": "Tilluftsfläkt fel (obekräftat)"
+      },
+      "exhaust_fan_failure": { "name": "Frånluftsfläkt fel" },
+      "exhaust_fan_failure_unconfirmed": {
+        "name": "Frånluftsfläkt fel (obekräftat)"
+      },
+      "filter_guard_unconfirmed": { "name": "Filtervakt info (obekräftat)" },
+      "emergency_stop_active": { "name": "Nödstopp" },
+      "preheater_temp_high": { "name": "Förvärmare temperatur hög" },
+      "preheater_temp_high_unconfirmed": {
+        "name": "Förvärmare temperatur hög (obekräftat)"
+      },
+      "supply_temp_low": { "name": "Tilluftstemperatur låg" },
+      "supply_temp_low_unconfirmed": {
+        "name": "Tilluftstemperatur låg (obekräftat)"
+      },
+      "supply_temp_high": { "name": "Tilluftstemperatur hög" },
+      "supply_temp_high_unconfirmed": {
+        "name": "Tilluftstemperatur hög (obekräftat)"
+      },
+      "rotor_alarm": { "name": "Rotorlarm" },
+      "rotor_alarm_unconfirmed": { "name": "Rotorlarm (obekräftat)" },
+      "fan_control_alarm": { "name": "Fläktstyrningslarm" },
+      "fan_control_alarm_unconfirmed": {
+        "name": "Fläktstyrningslarm (obekräftat)"
+      }
     },
     "switch": {
       "travelling_mode": { "name": "Reseläge" },

@@ -147,7 +147,87 @@
       "central_vacuum_active": { "name": "Central vacuum active" },
       "hood_compensation_active": { "name": "Hood compensation active" },
       "external_boost_active": { "name": "External boost active" },
-      "external_away_active": { "name": "External away active" }
+      "external_away_active": { "name": "External away active" },
+      "t1_sensor_failure": { "name": "T1 temperature sensor failure" },
+      "t2_sensor_failure": { "name": "T2 temperature sensor failure" },
+      "t3_sensor_failure": { "name": "T3 temperature sensor failure" },
+      "t4_sensor_failure": { "name": "T4 temperature sensor failure" },
+      "t5_sensor_failure": { "name": "T5 temperature sensor failure" },
+      "t6_sensor_failure": { "name": "T6 temperature sensor failure" },
+      "t7_sensor_failure": { "name": "T7 temperature sensor failure" },
+      "t8_sensor_failure": { "name": "T8 temperature sensor failure" },
+      "t9_sensor_failure": { "name": "T9 temperature sensor failure" },
+      "t1_sensor_failure_unconfirmed": {
+        "name": "T1 temperature sensor failure (unconfirmed)"
+      },
+      "t2_sensor_failure_unconfirmed": {
+        "name": "T2 temperature sensor failure (unconfirmed)"
+      },
+      "t3_sensor_failure_unconfirmed": {
+        "name": "T3 temperature sensor failure (unconfirmed)"
+      },
+      "t4_sensor_failure_unconfirmed": {
+        "name": "T4 temperature sensor failure (unconfirmed)"
+      },
+      "t5_sensor_failure_unconfirmed": {
+        "name": "T5 temperature sensor failure (unconfirmed)"
+      },
+      "t6_sensor_failure_unconfirmed": {
+        "name": "T6 temperature sensor failure (unconfirmed)"
+      },
+      "t7_sensor_failure_unconfirmed": {
+        "name": "T7 temperature sensor failure (unconfirmed)"
+      },
+      "t8_sensor_failure_unconfirmed": {
+        "name": "T8 temperature sensor failure (unconfirmed)"
+      },
+      "t9_sensor_failure_unconfirmed": {
+        "name": "T9 temperature sensor failure (unconfirmed)"
+      },
+      "afterheater_failure": { "name": "Afterheater failure" },
+      "afterheater_failure_unconfirmed": {
+        "name": "Afterheater failure (unconfirmed)"
+      },
+      "preheater_failure": { "name": "Preheater failure" },
+      "preheater_failure_unconfirmed": {
+        "name": "Preheater failure (unconfirmed)"
+      },
+      "freezing_danger": { "name": "Freezing danger" },
+      "freezing_danger_unconfirmed": {
+        "name": "Freezing danger (unconfirmed)"
+      },
+      "internal_temp_alarm": { "name": "Internal temperature alarm" },
+      "internal_temp_alarm_unconfirmed": {
+        "name": "Internal temperature alarm (unconfirmed)"
+      },
+      "supply_fan_failure": { "name": "Supply fan failure" },
+      "supply_fan_failure_unconfirmed": {
+        "name": "Supply fan failure (unconfirmed)"
+      },
+      "exhaust_fan_failure": { "name": "Exhaust fan failure" },
+      "exhaust_fan_failure_unconfirmed": {
+        "name": "Exhaust fan failure (unconfirmed)"
+      },
+      "filter_guard_unconfirmed": { "name": "Filter guard info (unconfirmed)" },
+      "emergency_stop_active": { "name": "Emergency stop" },
+      "preheater_temp_high": { "name": "Preheater temperature high" },
+      "preheater_temp_high_unconfirmed": {
+        "name": "Preheater temperature high (unconfirmed)"
+      },
+      "supply_temp_low": { "name": "Supply temperature low" },
+      "supply_temp_low_unconfirmed": {
+        "name": "Supply temperature low (unconfirmed)"
+      },
+      "supply_temp_high": { "name": "Supply temperature high" },
+      "supply_temp_high_unconfirmed": {
+        "name": "Supply temperature high (unconfirmed)"
+      },
+      "rotor_alarm": { "name": "Rotor alarm" },
+      "rotor_alarm_unconfirmed": { "name": "Rotor alarm (unconfirmed)" },
+      "fan_control_alarm": { "name": "Fan control alarm" },
+      "fan_control_alarm_unconfirmed": {
+        "name": "Fan control alarm (unconfirmed)"
+      }
     },
     "switch": {
       "travelling_mode": { "name": "Travelling mode" },

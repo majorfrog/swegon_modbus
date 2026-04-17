@@ -1160,6 +1160,13 @@ SWITCH_DESCRIPTIONS: tuple[ModbusSwitchEntityDescription, ...] = (
         address=5176,
         entity_category=EntityCategory.CONFIG,
     ),
+    # 4x5141 — Service reminder enable
+    ModbusSwitchEntityDescription(
+        key="service_reminder_enable",
+        translation_key="service_reminder_enable",
+        address=5140,
+        entity_category=EntityCategory.CONFIG,
+    ),
     # -------------------------------------------------------------------------
     # Smart function visibility — User Panel display control
     # -------------------------------------------------------------------------
@@ -1534,6 +1541,16 @@ NUMBER_DESCRIPTIONS: tuple[ModbusNumberEntityDescription, ...] = (
         min_value=-50,
         max_value=50,
         data_type=DATA_TYPE_INT16,
+    ),
+    ModbusNumberEntityDescription(  # 4x5142 — service reminder interval in months
+        key="service_reminder_interval",
+        translation_key="service_reminder_interval",
+        address=5141,
+        native_unit_of_measurement="months",
+        native_min_value=1,
+        native_max_value=60,
+        native_step=1,
+        entity_category=EntityCategory.CONFIG,
     ),
     ModbusNumberEntityDescription(  # 4x5155 — supply temp fine tuning, 0.1°C steps
         key="supply_temp_fine_tuning",

@@ -246,6 +246,9 @@
       "summer_cooling_cooker_hood_damper": {
         "name": "Summer cooling cooker hood damper"
       },
+      "service_reminder_enable": {
+        "name": "Service reminder"
+      },
       "fireplace_smart_visibility": {
         "name": "Fireplace visibility (smart functions)"
       },
@@ -453,6 +456,7 @@
       "external_precooling_fresh_air_limit": {
         "name": "External precooling fresh air limit"
       },
+      "service_reminder_interval": { "name": "Service reminder interval" },
       "supply_temp_fine_tuning": { "name": "Supply temperature fine tuning" }
     },
     "button": {

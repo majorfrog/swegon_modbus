@@ -250,6 +250,9 @@
       "summer_cooling_cooker_hood_damper": {
         "name": "Sommarkylning spiskåpsspjäll"
       },
+      "service_reminder_enable": {
+        "name": "Servicepåminnelse"
+      },
       "fireplace_smart_visibility": {
         "name": "Eldstad synlighet (smarta funktioner)"
       },
@@ -457,6 +460,7 @@
       "external_precooling_fresh_air_limit": {
         "name": "Extern förkylning friskluftsgräns"
       },
+      "service_reminder_interval": { "name": "Servicepåminnelse-intervall" },
       "supply_temp_fine_tuning": { "name": "Tilluftstemperatur finjustering" }
     },
     "button": {

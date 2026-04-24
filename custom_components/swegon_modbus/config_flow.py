@@ -108,6 +108,32 @@ class SwegonModbusConfigFlow(ConfigFlow, domain=DOMAIN):
             }
         )
 
+    @staticmethod
+    async def _async_test_rtu_connection(user_input: dict[str, Any]) -> dict[str, str]:
+        """Test an RTU connection. Return error dict (empty if successful)."""
+        client = AsyncModbusSerialClient(
+            port=user_input[CONF_PORT],
+            baudrate=int(user_input[CONF_BAUDRATE]),
+            bytesize=int(user_input[CONF_BYTESIZE]),
+            parity=user_input[CONF_PARITY],
+            stopbits=int(user_input[CONF_STOPBITS]),
+        )
+        try:
+            connected = await asyncio.wait_for(client.connect(), timeout=10.0)
+        except (asyncio.TimeoutError, OSError):
+            connected = False
+            _LOGGER.debug("RTU connection test failed", exc_info=True)
+        except Exception:  # noqa: BLE001
+            connected = False
+            _LOGGER.debug("RTU connection test failed", exc_info=True)
+        else:
+            if not connected:
+                _LOGGER.debug("RTU connection test failed (connection returned False)")
+        finally:
+            client.close()
+
+        return {} if connected else {"base": "cannot_connect"}
+
     async def async_step_import(self, import_data: dict[str, Any]) -> ConfigFlowResult:
         """Create a config entry from a configuration.yaml entry."""
         port = import_data[CONF_PORT]
@@ -124,7 +150,7 @@ class SwegonModbusConfigFlow(ConfigFlow, domain=DOMAIN):
 
         await self.async_set_unique_id(unique_id)
         self._abort_if_unique_id_configured()
-        return self.async_create_entry(title="Swegon CASA", data=data)
+        return self.async_create_entry(title=f"Swegon CASA RTU {port}", data=data)
 
     async def async_step_user(
         self, user_input: dict[str, Any] | None = None
@@ -139,26 +165,7 @@ class SwegonModbusConfigFlow(ConfigFlow, domain=DOMAIN):
         errors: dict[str, str] = {}
 
         if user_input is not None:
-            client = AsyncModbusSerialClient(
-                port=user_input[CONF_PORT],
-                baudrate=int(user_input[CONF_BAUDRATE]),
-                bytesize=int(user_input[CONF_BYTESIZE]),
-                parity=user_input[CONF_PARITY],
-                stopbits=int(user_input[CONF_STOPBITS]),
-            )
-            try:
-                connected = await asyncio.wait_for(client.connect(), timeout=10.0)
-            except (asyncio.TimeoutError, OSError):
-                connected = False
-                errors["base"] = "cannot_connect"
-            except Exception:  # noqa: BLE001
-                _LOGGER.debug("RTU connection test failed", exc_info=True)
-                errors["base"] = "cannot_connect"
-            else:
-                if not connected:
-                    errors["base"] = "cannot_connect"
-            finally:
-                client.close()
+            errors = await self._async_test_rtu_connection(user_input)
 
             if not errors:
                 port = user_input[CONF_PORT]
@@ -192,25 +199,7 @@ class SwegonModbusConfigFlow(ConfigFlow, domain=DOMAIN):
         errors: dict[str, str] = {}
 
         if user_input is not None:
-            client = AsyncModbusSerialClient(
-                port=user_input[CONF_PORT],
-                baudrate=int(user_input[CONF_BAUDRATE]),
-                bytesize=int(user_input[CONF_BYTESIZE]),
-                parity=user_input[CONF_PARITY],
-                stopbits=int(user_input[CONF_STOPBITS]),
-            )
-            try:
-                connected = await asyncio.wait_for(client.connect(), timeout=10.0)
-            except (asyncio.TimeoutError, OSError):
-                connected = False
-                errors["base"] = "cannot_connect"
-            except Exception:  # noqa: BLE001
-                errors["base"] = "cannot_connect"
-            else:
-                if not connected:
-                    errors["base"] = "cannot_connect"
-            finally:
-                client.close()
+            errors = await self._async_test_rtu_connection(user_input)
 
             if not errors:
                 port_str = user_input[CONF_PORT]

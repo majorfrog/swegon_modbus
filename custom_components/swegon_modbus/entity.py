@@ -54,11 +54,16 @@ class SwegonModbusEntity(CoordinatorEntity["SwegonModbusCoordinator"]):
             if not self._unavailable_logged:
                 _LOGGER.info(
                     "Entity %s is unavailable (coordinator update failed)",
-                    self.entity_id,
+                    self.entity_description.key
+                    if self.entity_description
+                    else "unknown",
                 )
                 self._unavailable_logged = True
             return False
         if self._unavailable_logged:
-            _LOGGER.info("Entity %s is back online", self.entity_id)
+            _LOGGER.info(
+                "Entity %s is back online",
+                self.entity_description.key if self.entity_description else "unknown",
+            )
             self._unavailable_logged = False
         return True

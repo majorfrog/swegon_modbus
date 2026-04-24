@@ -5,14 +5,14 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING
 
-_LOGGER = logging.getLogger(__name__)
-
 from homeassistant.components.number import NumberEntity
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
 from .entity import SwegonModbusEntity, create_device_info
 from .models import NUMBER_DESCRIPTIONS, ModbusNumberEntityDescription
+
+_LOGGER = logging.getLogger(__name__)
 
 if TYPE_CHECKING:
     from . import SwegonModbusConfigEntry

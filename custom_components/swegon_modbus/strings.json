@@ -478,6 +478,9 @@
     "connection_lost": {
       "message": "Modbus connection lost during polling: {error}"
     },
+    "value_out_of_range": {
+      "message": "The value is outside the allowed range for this register."
+    },
     "write_failed": {
       "message": "Failed to write to a Modbus holding register. Check your connection and device address."
     },

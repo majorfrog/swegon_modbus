@@ -7,7 +7,7 @@ from collections.abc import Mapping
 from datetime import timedelta
 import logging
 import struct
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from pymodbus.client import AsyncModbusSerialClient
 from pymodbus.exceptions import ConnectionException, ModbusException
@@ -45,6 +45,9 @@ from .models import (
     SWITCH_DESCRIPTIONS,
     ModbusSensorEntityDescription,
 )
+
+if TYPE_CHECKING:
+    from . import SwegonModbusConfigEntry
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -92,7 +95,9 @@ def _register_count(data_type: str) -> int:
 class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None]]):
     """Coordinator that polls a Modbus device for all defined sensors."""
 
-    def __init__(self, hass: HomeAssistant, config_entry: ConfigEntry) -> None:
+    def __init__(
+        self, hass: HomeAssistant, config_entry: SwegonModbusConfigEntry
+    ) -> None:
         """Initialise the coordinator and create the appropriate Modbus client."""
         self._base_update_interval = timedelta(seconds=SCAN_INTERVAL_SECONDS)
         self._consecutive_failures: int = 0
@@ -143,6 +148,9 @@ class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None
                 if not entry.disabled
             }
         else:
+            # On first boot, the entity registry is empty. In this case, we poll
+            # all entities that have entity_registry_enabled_default=True, while
+            # skipping those explicitly disabled by the integration.
             self._enabled_keys = {
                 desc.key
                 for desc in (
@@ -240,47 +248,50 @@ class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None
     ) -> list[int] | None:
         """Perform the raw Modbus read and return register list, or None on error."""
         try:
-            async with self._modbus_lock:
-                if input_type == INPUT_TYPE_INPUT:
-                    result = await self._client.read_input_registers(
-                        address=address,
-                        count=count,
-                        device_id=self._device_id,
-                    )
-                else:
-                    result = await self._client.read_holding_registers(
-                        address=address,
-                        count=count,
-                        device_id=self._device_id,
-                    )
-        except ConnectionException:
+            try:
+                async with self._modbus_lock:
+                    if input_type == INPUT_TYPE_INPUT:
+                        result = await self._client.read_input_registers(
+                            address=address,
+                            count=count,
+                            device_id=self._device_id,
+                        )
+                    else:
+                        result = await self._client.read_holding_registers(
+                            address=address,
+                            count=count,
+                            device_id=self._device_id,
+                        )
+            except ConnectionException:
+                raise
+            except ModbusException as err:
+                _LOGGER.warning(
+                    "Modbus protocol error reading %s (address %d): %s",
+                    key,
+                    address,
+                    err,
+                )
+                return None
+
+            if result.isError():
+                _LOGGER.warning(
+                    "Device returned error response for %s (address %d): %s",
+                    key,
+                    address,
+                    result,
+                )
+                return None
+
+            if not result.registers:
+                _LOGGER.warning("Empty register data for %s (address %d)", key, address)
+                return None
+
+            return result.registers
+        except asyncio.CancelledError:
+            # Task was cancelled; close the client and re-raise so the coordinator
+            # can properly handle the cancellation.
+            self._client.close()
             raise
-        except ModbusException as err:
-            if isinstance(err.__cause__, asyncio.CancelledError):
-                self._client.close()
-                raise err.__cause__
-            _LOGGER.warning(
-                "Modbus protocol error reading %s (address %d): %s",
-                key,
-                address,
-                err,
-            )
-            return None
-
-        if result.isError():
-            _LOGGER.warning(
-                "Device returned error response for %s (address %d): %s",
-                key,
-                address,
-                result,
-            )
-            return None
-
-        if not result.registers:
-            _LOGGER.warning("Empty register data for %s (address %d)", key, address)
-            return None
-
-        return result.registers
 
     async def _read_sensor(
         self, desc: ModbusSensorEntityDescription
@@ -356,6 +367,7 @@ class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None
             new_interval,
         )
 
+    @callback
     def async_disconnect(self) -> None:
         """Close the Modbus transport; called on entry unload."""
         self._client.close()
@@ -371,12 +383,12 @@ class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None
         if min_raw is not None and value < min_raw:
             raise HomeAssistantError(
                 translation_domain=DOMAIN,
-                translation_key="write_failed",
+                translation_key="value_out_of_range",
             )
         if max_raw is not None and value > max_raw:
             raise HomeAssistantError(
                 translation_domain=DOMAIN,
-                translation_key="write_failed",
+                translation_key="value_out_of_range",
             )
         if value < 0:
             value = value & 0xFFFF

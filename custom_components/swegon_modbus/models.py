@@ -40,6 +40,7 @@ from homeassistant.const import (
     CONCENTRATION_PARTS_PER_MILLION,
     EntityCategory,
     PERCENTAGE,
+    REVOLUTIONS_PER_MINUTE,
     UnitOfPressure,
     UnitOfTemperature,
     UnitOfTime,
@@ -383,17 +384,17 @@ SENSOR_DESCRIPTIONS: tuple[ModbusSensorEntityDescription, ...] = (
         precision=0,
         device_class=SensorDeviceClass.HUMIDITY,
     ),  # 3x6214
-    create_generic_sensor(  # 3x6215 — absolute humidity 0.1 g/m³
+    create_generic_sensor(
         "absolute_humidity",
         6214,
-        native_unit_of_measurement="g/m³",
+        native_unit_of_measurement="g/m³",  # No HA constant for mass concentration
         scale=0.1,
         precision=1,
     ),
     create_generic_sensor(  # 3x6216 — AH setpoint 0.1 g/m³
         "absolute_humidity_setpoint",
         6215,
-        native_unit_of_measurement="g/m³",
+        native_unit_of_measurement="g/m³",  # No HA constant for mass concentration
         scale=0.1,
         precision=1,
     ),
@@ -425,13 +426,13 @@ SENSOR_DESCRIPTIONS: tuple[ModbusSensorEntityDescription, ...] = (
     create_generic_sensor(
         "supply_air_flow",
         6219,
-        native_unit_of_measurement="L/s",
+        native_unit_of_measurement="L/s",  # UnitOfVolumeFlowRate does not include L/s
         precision=0,
     ),  # 3x6220
     create_generic_sensor(
         "exhaust_air_flow",
         6220,
-        native_unit_of_measurement="L/s",
+        native_unit_of_measurement="L/s",  # UnitOfVolumeFlowRate does not include L/s
         precision=0,
     ),  # 3x6221
     # -------------------------------------------------------------------------
@@ -475,21 +476,21 @@ SENSOR_DESCRIPTIONS: tuple[ModbusSensorEntityDescription, ...] = (
     create_generic_sensor(
         "supply_fan_speed",
         6304,
-        native_unit_of_measurement="rpm",
+        native_unit_of_measurement=REVOLUTIONS_PER_MINUTE,
         scale=1.0,
         precision=0,
     ),  # 3x6305
     create_generic_sensor(
         "extract_fan_speed",
         6305,
-        native_unit_of_measurement="rpm",
+        native_unit_of_measurement=REVOLUTIONS_PER_MINUTE,
         scale=1.0,
         precision=0,
     ),  # 3x6306
     create_generic_sensor(
         "rotor_rpm",
         6233,
-        native_unit_of_measurement="rpm",
+        native_unit_of_measurement=REVOLUTIONS_PER_MINUTE,
         precision=0,
     ),  # 3x6234
     # -------------------------------------------------------------------------

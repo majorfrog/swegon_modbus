@@ -84,7 +84,11 @@ rules:
   entity-device-class: done
   entity-disabled-by-default:
     status: done
-    comment: All entities are enabled by default; none are noisy enough to disable.
+    comment: >
+      Many diagnostic and alarm entities are disabled by default
+      (entity_registry_enabled_default=False) to reduce clutter. This includes
+      all T1–T9 sensor-failure sensors and their unconfirmed variants, as well
+      as most alarm-unconfirmed sensors.
   entity-translations: done
   exception-translations:
     status: done

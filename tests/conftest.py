@@ -63,12 +63,6 @@ def mock_rtu_config_flow_client() -> Generator[MagicMock, None, None]:
 
 @pytest.fixture
 def mock_rtu_config_entry() -> MockConfigEntry:
-    """Return a MockConfigEntry that is intentionally absent (TCP not supported)."""
-    raise NotImplementedError("TCP is not supported; use mock_rtu_config_entry")  # type: ignore[return]
-
-
-@pytest.fixture
-def mock_rtu_config_entry() -> MockConfigEntry:
     """Return a MockConfigEntry for an RTU connection."""
     return MockConfigEntry(
         domain=DOMAIN,

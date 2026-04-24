@@ -5,8 +5,6 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING
 
-_LOGGER = logging.getLogger(__name__)
-
 from homeassistant.components.select import SelectEntity
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import HomeAssistantError
@@ -15,6 +13,8 @@ from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from .const import DOMAIN
 from .entity import SwegonModbusEntity, create_device_info
 from .models import SELECT_DESCRIPTIONS, ModbusSelectEntityDescription
+
+_LOGGER = logging.getLogger(__name__)
 
 if TYPE_CHECKING:
     from . import SwegonModbusConfigEntry

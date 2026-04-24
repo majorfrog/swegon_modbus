@@ -75,7 +75,13 @@ async def async_setup(hass: HomeAssistant, config: dict[str, Any]) -> bool:
 
 
 async def async_migrate_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Migrate old config entry versions to the current schema."""
+    """Migrate old config entry versions to the current schema.
+
+    Currently, the integration is at VERSION 1, so no migrations are needed.
+    This function is a placeholder for future migrations when the config
+    entry schema changes.
+    """
+    _LOGGER.debug("Migrating entry %s from version %s", entry.entry_id, entry.version)
     return True
 
 

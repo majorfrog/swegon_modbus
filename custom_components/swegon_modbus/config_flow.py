@@ -110,7 +110,7 @@ class SwegonModbusConfigFlow(ConfigFlow, domain=DOMAIN):
 
     @staticmethod
     async def _async_test_rtu_connection(user_input: dict[str, Any]) -> dict[str, str]:
-        """Test an RTU connection. Return error dict (empty if successful)."""
+        """Test an RTU connection and validate device identity. Return error dict (empty if successful)."""
         client = AsyncModbusSerialClient(
             port=user_input[CONF_PORT],
             baudrate=int(user_input[CONF_BAUDRATE]),
@@ -120,19 +120,31 @@ class SwegonModbusConfigFlow(ConfigFlow, domain=DOMAIN):
         )
         try:
             connected = await asyncio.wait_for(client.connect(), timeout=10.0)
-        except (asyncio.TimeoutError, OSError):
-            connected = False
-            _LOGGER.debug("RTU connection test failed", exc_info=True)
-        except Exception:  # noqa: BLE001
-            connected = False
-            _LOGGER.debug("RTU connection test failed", exc_info=True)
-        else:
             if not connected:
                 _LOGGER.debug("RTU connection test failed (connection returned False)")
+                return {"base": "cannot_connect"}
+
+            # Validate device identity by reading firmware major version (3x6001)
+            unit_id = int(user_input[CONF_UNIT_ID])
+            result = await asyncio.wait_for(
+                client.read_input_registers(6000, 1, unit=unit_id), timeout=10.0
+            )
+            if result.isError():
+                _LOGGER.debug(
+                    "RTU device validation failed: cannot read firmware register"
+                )
+                return {"base": "cannot_connect"}
+
+        except asyncio.TimeoutError:
+            _LOGGER.debug("RTU connection or device read test timed out", exc_info=True)
+            return {"base": "cannot_connect"}
+        except Exception:  # noqa: BLE001
+            _LOGGER.debug("RTU connection test failed", exc_info=True)
+            return {"base": "cannot_connect"}
         finally:
             client.close()
 
-        return {} if connected else {"base": "cannot_connect"}
+        return {}
 
     async def async_step_import(self, import_data: dict[str, Any]) -> ConfigFlowResult:
         """Create a config entry from a configuration.yaml entry."""

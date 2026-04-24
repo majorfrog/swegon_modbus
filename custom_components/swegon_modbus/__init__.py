@@ -10,7 +10,7 @@ import voluptuous as vol
 from homeassistant.config_entries import ConfigEntry, SOURCE_IMPORT
 from homeassistant.const import CONF_PORT, Platform
 from homeassistant.core import HomeAssistant
-from homeassistant.helpers import config_validation as cv
+from homeassistant.helpers import config_validation as cv, device_registry as dr
 
 from .const import (
     CONF_BAUDRATE,
@@ -97,6 +97,25 @@ async def async_setup_entry(
     _LOGGER.debug("First refresh complete")
 
     entry.runtime_data = coordinator
+
+    # Update device registry with firmware version if available
+    if coordinator.data:
+        fw_major = coordinator.data.get("firmware_version_major")
+        fw_minor = coordinator.data.get("firmware_version_minor")
+        fw_build = coordinator.data.get("firmware_build")
+        if fw_major is not None and fw_minor is not None and fw_build is not None:
+            sw_version = f"{int(fw_major)}.{int(fw_minor)}.{int(fw_build)}"
+            device_registry = dr.async_get(hass)
+            device = device_registry.async_get_device(
+                identifiers={(DOMAIN, entry.entry_id)}
+            )
+            if device:
+                device_registry.async_update_device(
+                    device.id, sw_version=sw_version
+                )
+                _LOGGER.debug(
+                    "Updated device sw_version to %s", sw_version
+                )
 
     entry.async_on_unload(coordinator.async_disconnect)
 

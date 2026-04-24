@@ -59,14 +59,6 @@ from .const import (
 class ModbusSensorEntityDescription(SensorEntityDescription):
     """Extends SensorEntityDescription with Modbus-specific register metadata."""
 
-    key: str
-    translation_key: str | None = None
-    entity_registry_enabled_default: bool = True
-    entity_category: EntityCategory | None = None
-    native_unit_of_measurement: str | None = None
-    device_class: SensorDeviceClass | None = None
-    state_class: SensorStateClass | str | None = None
-
     address: int = 0
     input_type: str = INPUT_TYPE_INPUT
     data_type: str = DATA_TYPE_INT16
@@ -81,12 +73,6 @@ class ModbusSensorEntityDescription(SensorEntityDescription):
 class ModbusBinarySensorEntityDescription(BinarySensorEntityDescription):
     """Extends BinarySensorEntityDescription with Modbus-specific register metadata."""
 
-    key: str
-    translation_key: str | None = None
-    entity_registry_enabled_default: bool = True
-    entity_category: EntityCategory | None = None
-    device_class: BinarySensorDeviceClass | None = None
-
     address: int = 0
     input_type: str = INPUT_TYPE_INPUT
     data_type: str = DATA_TYPE_UINT16
@@ -97,14 +83,6 @@ class ModbusBinarySensorEntityDescription(BinarySensorEntityDescription):
 class ModbusCombinedSensorEntityDescription(SensorEntityDescription):
     """A sensor whose value is derived by combining multiple Modbus register reads."""
 
-    key: str
-    translation_key: str | None = None
-    entity_registry_enabled_default: bool = True
-    entity_category: EntityCategory | None = None
-    native_unit_of_measurement: str | None = None
-    device_class: SensorDeviceClass | None = None
-    state_class: SensorStateClass | str | None = None
-
     components: tuple[ModbusSensorEntityDescription, ...]
     format_fn: Callable[[list[float]], str] | None = None
     value_fn: Callable[[list[float]], float] | None = None
@@ -113,11 +91,6 @@ class ModbusCombinedSensorEntityDescription(SensorEntityDescription):
 @dataclass(frozen=True, kw_only=True)
 class ModbusSwitchEntityDescription(SwitchEntityDescription):
     """Switch entity backed by a Modbus holding register (0=off, 1=on)."""
-
-    key: str
-    translation_key: str | None = None
-    entity_registry_enabled_default: bool = True
-    entity_category: EntityCategory | None = None
 
     address: int = 0
     input_type: str = INPUT_TYPE_HOLDING
@@ -129,12 +102,6 @@ class ModbusSwitchEntityDescription(SwitchEntityDescription):
 class ModbusSelectEntityDescription(SelectEntityDescription):
     """Select entity backed by a Modbus holding register."""
 
-    key: str
-    translation_key: str | None = None
-    entity_registry_enabled_default: bool = True
-    entity_category: EntityCategory | None = None
-
-    options: list[str] | None = None
     value_map: dict[int, str]
 
     address: int = 0
@@ -145,14 +112,6 @@ class ModbusSelectEntityDescription(SelectEntityDescription):
 @dataclass(frozen=True, kw_only=True)
 class ModbusNumberEntityDescription(NumberEntityDescription):
     """Number entity backed by a Modbus holding register."""
-
-    key: str
-    translation_key: str | None = None
-    entity_registry_enabled_default: bool = True
-    entity_category: EntityCategory | None = None
-    native_unit_of_measurement: str | None = None
-    device_class: NumberDeviceClass | None = None
-    mode: NumberMode = NumberMode.BOX
 
     address: int = 0
     input_type: str = INPUT_TYPE_HOLDING
@@ -167,11 +126,6 @@ class ModbusNumberEntityDescription(NumberEntityDescription):
 @dataclass(frozen=True, kw_only=True)
 class ModbusButtonEntityDescription(ButtonEntityDescription):
     """Button entity that writes a fixed value to a Modbus holding register."""
-
-    key: str
-    translation_key: str | None = None
-    entity_registry_enabled_default: bool = True
-    entity_category: EntityCategory | None = None
 
     address: int = 0
     input_type: str = INPUT_TYPE_HOLDING

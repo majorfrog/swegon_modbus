@@ -1,0 +1,2635 @@
+# serializer version: 1
+# name: test_entities[number.swegon_casa_away_temp_drop-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 10,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_away_temp_drop',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Away temperature drop',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'away_temp_drop',
+    'unique_id': 'test_swegon_modbus_entry_id_away_temp_drop',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_away_temp_drop-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Away temperature drop',
+      'max': 10,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_away_temp_drop',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_central_vacuum_compensation-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_central_vacuum_compensation',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Central vacuum compensation',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'central_vacuum_compensation',
+    'unique_id': 'test_swegon_modbus_entry_id_central_vacuum_compensation',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_central_vacuum_compensation-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Central vacuum compensation',
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_central_vacuum_compensation',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_central_vacuum_run_time-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 60,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_central_vacuum_run_time',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.DURATION: 'duration'>,
+    'original_icon': None,
+    'original_name': 'Central vacuum run time',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'central_vacuum_run_time',
+    'unique_id': 'test_swegon_modbus_entry_id_central_vacuum_run_time',
+    'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_central_vacuum_run_time-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'duration',
+      'friendly_name': 'Swegon CASA Central vacuum run time',
+      'max': 60,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_central_vacuum_run_time',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_co2_away_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 2000,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_co2_away_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.CO2: 'carbon_dioxide'>,
+    'original_icon': None,
+    'original_name': 'CO₂ away limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'co2_away_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_co2_away_limit',
+    'unit_of_measurement': 'ppm',
+  })
+# ---
+# name: test_entities[number.swegon_casa_co2_away_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'carbon_dioxide',
+      'friendly_name': 'Swegon CASA CO₂ away limit',
+      'max': 2000,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': 'ppm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_co2_away_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_co2_home_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 2000,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_co2_home_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.CO2: 'carbon_dioxide'>,
+    'original_icon': None,
+    'original_name': 'CO₂ home limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'co2_home_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_co2_home_limit',
+    'unit_of_measurement': 'ppm',
+  })
+# ---
+# name: test_entities[number.swegon_casa_co2_home_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'carbon_dioxide',
+      'friendly_name': 'Swegon CASA CO₂ home limit',
+      'max': 2000,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': 'ppm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_co2_home_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_cooker_hood_boost_compensation-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_cooker_hood_boost_compensation',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Cooker hood boost compensation',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'cooker_hood_boost_compensation',
+    'unique_id': 'test_swegon_modbus_entry_id_cooker_hood_boost_compensation',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_cooker_hood_boost_compensation-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Cooker hood boost compensation',
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_cooker_hood_boost_compensation',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_cooker_hood_boost_speed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_cooker_hood_boost_speed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Cooker hood boost speed',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'cooker_hood_boost_speed',
+    'unique_id': 'test_swegon_modbus_entry_id_cooker_hood_boost_speed',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_cooker_hood_boost_speed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Cooker hood boost speed',
+      'max': 100,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_cooker_hood_boost_speed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_cooker_hood_home_compensation-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_cooker_hood_home_compensation',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Cooker hood home compensation',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'cooker_hood_home_compensation',
+    'unique_id': 'test_swegon_modbus_entry_id_cooker_hood_home_compensation',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_cooker_hood_home_compensation-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Cooker hood home compensation',
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_cooker_hood_home_compensation',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_cooling_fresh_air_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_cooling_fresh_air_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Cooling fresh air limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'cooling_fresh_air_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_cooling_fresh_air_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_cooling_fresh_air_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Cooling fresh air limit',
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_cooling_fresh_air_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_exhaust_fan_speed_away-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_exhaust_fan_speed_away',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Exhaust fan speed (away)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'exhaust_fan_speed_away',
+    'unique_id': 'test_swegon_modbus_entry_id_exhaust_fan_speed_away',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_exhaust_fan_speed_away-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Exhaust fan speed (away)',
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_exhaust_fan_speed_away',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_exhaust_fan_speed_boost-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_exhaust_fan_speed_boost',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Exhaust fan speed (boost)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'exhaust_fan_speed_boost',
+    'unique_id': 'test_swegon_modbus_entry_id_exhaust_fan_speed_boost',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_exhaust_fan_speed_boost-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Exhaust fan speed (boost)',
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_exhaust_fan_speed_boost',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_exhaust_fan_speed_home-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_exhaust_fan_speed_home',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Exhaust fan speed (home)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'exhaust_fan_speed_home',
+    'unique_id': 'test_swegon_modbus_entry_id_exhaust_fan_speed_home',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_exhaust_fan_speed_home-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Exhaust fan speed (home)',
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_exhaust_fan_speed_home',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_external_precooling_fresh_air_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': -50,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_external_precooling_fresh_air_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'External precooling fresh air limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_precooling_fresh_air_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_external_precooling_fresh_air_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_external_precooling_fresh_air_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA External precooling fresh air limit',
+      'max': 50,
+      'min': -50,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_external_precooling_fresh_air_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_external_preheating_fresh_air_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': -50,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_external_preheating_fresh_air_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'External preheating fresh air limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_preheating_fresh_air_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_external_preheating_fresh_air_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_external_preheating_fresh_air_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA External preheating fresh air limit',
+      'max': 50,
+      'min': -50,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_external_preheating_fresh_air_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_fireplace_max_speed_diff-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 25,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_fireplace_max_speed_diff',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Fireplace max speed difference',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'fireplace_max_speed_diff',
+    'unique_id': 'test_swegon_modbus_entry_id_fireplace_max_speed_diff',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_fireplace_max_speed_diff-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Fireplace max speed difference',
+      'max': 25,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_fireplace_max_speed_diff',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_fireplace_run_time-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 60,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_fireplace_run_time',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.DURATION: 'duration'>,
+    'original_icon': None,
+    'original_name': 'Fireplace run time',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'fireplace_run_time',
+    'unique_id': 'test_swegon_modbus_entry_id_fireplace_run_time',
+    'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_fireplace_run_time-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'duration',
+      'friendly_name': 'Swegon CASA Fireplace run time',
+      'max': 60,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_fireplace_run_time',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_heating_boost_gain-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_heating_boost_gain',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Heating boost gain',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'heating_boost_gain',
+    'unique_id': 'test_swegon_modbus_entry_id_heating_boost_gain',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_heating_boost_gain-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Heating boost gain',
+      'max': 100,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_heating_boost_gain',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_heating_fresh_air_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': -50,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_heating_fresh_air_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Heating fresh air limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'heating_fresh_air_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_heating_fresh_air_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_heating_fresh_air_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Heating fresh air limit',
+      'max': 50,
+      'min': -50,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_heating_fresh_air_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_max_smart_boost-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_max_smart_boost',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Maximum smart boost',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'max_smart_boost',
+    'unique_id': 'test_swegon_modbus_entry_id_max_smart_boost',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_max_smart_boost-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Maximum smart boost',
+      'max': 100,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_max_smart_boost',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_rh_boost_delay-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 30,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_rh_boost_delay',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.DURATION: 'duration'>,
+    'original_icon': None,
+    'original_name': 'Humidity boost delay',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'rh_boost_delay',
+    'unique_id': 'test_swegon_modbus_entry_id_rh_boost_delay',
+    'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_rh_boost_delay-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'duration',
+      'friendly_name': 'Swegon CASA Humidity boost delay',
+      'max': 30,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_rh_boost_delay',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_rh_boost_during_delay-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 25,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_rh_boost_during_delay',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Humidity boost during delay',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'rh_boost_during_delay',
+    'unique_id': 'test_swegon_modbus_entry_id_rh_boost_during_delay',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_rh_boost_during_delay-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Humidity boost during delay',
+      'max': 25,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_rh_boost_during_delay',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_rh_boost_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_rh_boost_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Humidity boost limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'rh_boost_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_rh_boost_limit',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_rh_boost_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Humidity boost limit',
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_rh_boost_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_rh_full_boost_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_rh_full_boost_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Humidity full boost limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'rh_full_boost_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_rh_full_boost_limit',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_rh_full_boost_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Humidity full boost limit',
+      'max': 50,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_rh_full_boost_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_control_cooling_max-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_room_control_cooling_max',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Room control cooling maximum',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'room_control_cooling_max',
+    'unique_id': 'test_swegon_modbus_entry_id_room_control_cooling_max',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_control_cooling_max-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Room control cooling maximum',
+      'max': 50,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_room_control_cooling_max',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_control_cooling_min-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_room_control_cooling_min',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Room control cooling minimum',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'room_control_cooling_min',
+    'unique_id': 'test_swegon_modbus_entry_id_room_control_cooling_min',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_control_cooling_min-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Room control cooling minimum',
+      'max': 50,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_room_control_cooling_min',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_control_supply_max-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_room_control_supply_max',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Room control supply maximum',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'room_control_supply_max',
+    'unique_id': 'test_swegon_modbus_entry_id_room_control_supply_max',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_control_supply_max-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Room control supply maximum',
+      'max': 50,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_room_control_supply_max',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_control_supply_min-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 50,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_room_control_supply_min',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Room control supply minimum',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'room_control_supply_min',
+    'unique_id': 'test_swegon_modbus_entry_id_room_control_supply_min',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_control_supply_min-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Room control supply minimum',
+      'max': 50,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_room_control_supply_min',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_temp_fine_tuning-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 5.0,
+      'min': -5.0,
+      'mode': None,
+      'step': 0.1,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_room_temp_fine_tuning',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Room temperature fine tuning',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'room_temp_fine_tuning',
+    'unique_id': 'test_swegon_modbus_entry_id_room_temp_fine_tuning',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_room_temp_fine_tuning-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Room temperature fine tuning',
+      'max': 5.0,
+      'min': -5.0,
+      'mode': None,
+      'step': 0.1,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_room_temp_fine_tuning',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '21.5',
+  })
+# ---
+# name: test_entities[number.swegon_casa_service_reminder_interval-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 60,
+      'min': 1,
+      'mode': None,
+      'step': 1,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_service_reminder_interval',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Service reminder interval',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'service_reminder_interval',
+    'unique_id': 'test_swegon_modbus_entry_id_service_reminder_interval',
+    'unit_of_measurement': 'months',
+  })
+# ---
+# name: test_entities[number.swegon_casa_service_reminder_interval-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Service reminder interval',
+      'max': 60,
+      'min': 1,
+      'mode': None,
+      'step': 1,
+      'unit_of_measurement': 'months',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_service_reminder_interval',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_smart_control-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': -100,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': None,
+    'entity_id': 'number.swegon_casa_smart_control',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Smart control',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'smart_control',
+    'unique_id': 'test_swegon_modbus_entry_id_smart_control',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_smart_control-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Smart control',
+      'max': 100,
+      'min': -100,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_smart_control',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_boost_room_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 28,
+      'min': 18,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_summer_cooling_boost_room_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Summer cooling boost room limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_boost_room_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_boost_room_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_boost_room_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Summer cooling boost room limit',
+      'max': 28,
+      'min': 18,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_summer_cooling_boost_room_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_fresh_air_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 25,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_summer_cooling_fresh_air_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Summer cooling fresh air limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_fresh_air_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_fresh_air_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_fresh_air_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Summer cooling fresh air limit',
+      'max': 25,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_summer_cooling_fresh_air_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_fresh_air_start_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 25,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_summer_cooling_fresh_air_start_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Summer cooling fresh air start limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_fresh_air_start_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_fresh_air_start_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_fresh_air_start_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Summer cooling fresh air start limit',
+      'max': 25,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_summer_cooling_fresh_air_start_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_full_boost_room_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 40,
+      'min': 18,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_summer_cooling_full_boost_room_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Summer cooling full boost room limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_full_boost_room_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_full_boost_room_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_full_boost_room_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Summer cooling full boost room limit',
+      'max': 40,
+      'min': 18,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_summer_cooling_full_boost_room_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_min_supply_temp-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 25,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_summer_cooling_min_supply_temp',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Summer cooling minimum supply temperature',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_min_supply_temp',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_min_supply_temp',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_min_supply_temp-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Summer cooling minimum supply temperature',
+      'max': 25,
+      'min': 10,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_summer_cooling_min_supply_temp',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_room_temp_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 35,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_summer_cooling_room_temp_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Summer cooling room temperature limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_room_temp_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_room_temp_limit',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_summer_cooling_room_temp_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Summer cooling room temperature limit',
+      'max': 35,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_summer_cooling_room_temp_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_supply_fan_speed_away-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_supply_fan_speed_away',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Supply fan speed (away)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_fan_speed_away',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_fan_speed_away',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_supply_fan_speed_away-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Supply fan speed (away)',
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_supply_fan_speed_away',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_supply_fan_speed_boost-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_supply_fan_speed_boost',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Supply fan speed (boost)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_fan_speed_boost',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_fan_speed_boost',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_supply_fan_speed_boost-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Supply fan speed (boost)',
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_supply_fan_speed_boost',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_supply_fan_speed_home-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_supply_fan_speed_home',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Supply fan speed (home)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_fan_speed_home',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_fan_speed_home',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_supply_fan_speed_home-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Supply fan speed (home)',
+      'max': 100,
+      'min': 20,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_supply_fan_speed_home',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_supply_temp_fine_tuning-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 5.0,
+      'min': -5.0,
+      'mode': None,
+      'step': 0.1,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_supply_temp_fine_tuning',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Supply temperature fine tuning',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_temp_fine_tuning',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_temp_fine_tuning',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_supply_temp_fine_tuning-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Supply temperature fine tuning',
+      'max': 5.0,
+      'min': -5.0,
+      'mode': None,
+      'step': 0.1,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_supply_temp_fine_tuning',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '21.5',
+  })
+# ---
+# name: test_entities[number.swegon_casa_temperature_setpoint-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 25,
+      'min': 13,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_temperature_setpoint',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Temperature setpoint',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'temperature_setpoint',
+    'unique_id': 'test_swegon_modbus_entry_id_temperature_setpoint',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_temperature_setpoint-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Temperature setpoint',
+      'max': 25,
+      'min': 13,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_temperature_setpoint',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_travelling_speed_drop-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 20,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_travelling_speed_drop',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Travelling speed drop',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'travelling_speed_drop',
+    'unique_id': 'test_swegon_modbus_entry_id_travelling_speed_drop',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_entities[number.swegon_casa_travelling_speed_drop-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Travelling speed drop',
+      'max': 20,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_travelling_speed_drop',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_travelling_temp_drop-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 10,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_travelling_temp_drop',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Travelling temperature drop',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'travelling_temp_drop',
+    'unique_id': 'test_swegon_modbus_entry_id_travelling_temp_drop',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_entities[number.swegon_casa_travelling_temp_drop-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Swegon CASA Travelling temperature drop',
+      'max': 10,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_travelling_temp_drop',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_voc_boost_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 2000,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_voc_boost_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'VOC boost limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'voc_boost_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_voc_boost_limit',
+    'unit_of_measurement': 'ppm',
+  })
+# ---
+# name: test_entities[number.swegon_casa_voc_boost_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA VOC boost limit',
+      'max': 2000,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': 'ppm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_voc_boost_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---
+# name: test_entities[number.swegon_casa_voc_full_boost_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'max': 2000,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'number',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'number.swegon_casa_voc_full_boost_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'VOC full boost limit',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'voc_full_boost_limit',
+    'unique_id': 'test_swegon_modbus_entry_id_voc_full_boost_limit',
+    'unit_of_measurement': 'ppm',
+  })
+# ---
+# name: test_entities[number.swegon_casa_voc_full_boost_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA VOC full boost limit',
+      'max': 2000,
+      'min': 0,
+      'mode': None,
+      'step': 1.0,
+      'unit_of_measurement': 'ppm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'number.swegon_casa_voc_full_boost_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '215.0',
+  })
+# ---

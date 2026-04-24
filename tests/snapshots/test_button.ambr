@@ -1,0 +1,433 @@
+# serializer version: 1
+# name: test_entities[button.swegon_casa_activate_fireplace-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': None,
+    'entity_id': 'button.swegon_casa_activate_fireplace',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Activate fireplace',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'activate_fireplace',
+    'unique_id': 'test_swegon_modbus_entry_id_activate_fireplace',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_activate_fireplace-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Activate fireplace',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_activate_fireplace',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_fan_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'button.swegon_casa_confirm_fan_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Confirm fan alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'confirm_fan_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_confirm_fan_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_fan_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Confirm fan alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_confirm_fan_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_filter_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'button.swegon_casa_confirm_filter_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Confirm filter alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'confirm_filter_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_confirm_filter_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_filter_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Confirm filter alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_confirm_filter_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_freezing_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'button.swegon_casa_confirm_freezing_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Confirm freezing alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'confirm_freezing_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_confirm_freezing_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_freezing_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Confirm freezing alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_confirm_freezing_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_preheater_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'button.swegon_casa_confirm_preheater_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Confirm preheater alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'confirm_preheater_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_confirm_preheater_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_preheater_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Confirm preheater alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_confirm_preheater_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_reheater_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'button.swegon_casa_confirm_reheater_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Confirm reheater alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'confirm_reheater_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_confirm_reheater_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_reheater_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Confirm reheater alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_confirm_reheater_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_sensor_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'button.swegon_casa_confirm_sensor_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Confirm sensor alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'confirm_sensor_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_confirm_sensor_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_sensor_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Confirm sensor alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_confirm_sensor_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_service_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'button.swegon_casa_confirm_service_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Confirm service alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'confirm_service_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_confirm_service_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_confirm_service_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Confirm service alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_confirm_service_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[button.swegon_casa_reset_all_alarms-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'button',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'button.swegon_casa_reset_all_alarms',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Reset all alarms',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'reset_all_alarms',
+    'unique_id': 'test_swegon_modbus_entry_id_reset_all_alarms',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[button.swegon_casa_reset_all_alarms-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Reset all alarms',
+    }),
+    'context': <ANY>,
+    'entity_id': 'button.swegon_casa_reset_all_alarms',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---

@@ -5,14 +5,30 @@ from __future__ import annotations
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
+from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import entity_registry as er
 from homeassistant.helpers.entity_registry import EntityRegistry
 from pymodbus.exceptions import ConnectionException
+from syrupy.assertion import SnapshotAssertion
+
+try:
+    from pytest_homeassistant_custom_component.common import (
+        MockConfigEntry,
+        snapshot_platform,
+    )
+except ImportError:
+    from tests.common import MockConfigEntry, snapshot_platform  # type: ignore[no-redef]
 
 from custom_components.swegon_modbus.const import DOMAIN
 
 from .fixtures import MOCK_FRESH_AIR_TEMP_VALUE, mock_register_result
+
+
+@pytest.fixture
+def platforms() -> list[Platform]:
+    """Load only the sensor platform for this test module."""
+    return [Platform.SENSOR]
 
 
 # ---------------------------------------------------------------------------
@@ -124,3 +140,19 @@ async def test_enum_sensor_shows_mapped_state(
     state = hass.states.get(entity_id)
     assert state is not None
     assert state.state == "normal"
+
+
+# ---------------------------------------------------------------------------
+# Snapshot test — all sensor entities
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.usefixtures("entity_registry_enabled_by_default")
+async def test_entities(
+    hass: HomeAssistant,
+    snapshot: SnapshotAssertion,
+    entity_registry: EntityRegistry,
+    init_integration: MockConfigEntry,
+) -> None:
+    """Verify all sensor entity states and attributes match the snapshot."""
+    await snapshot_platform(hass, entity_registry, snapshot, init_integration.entry_id)

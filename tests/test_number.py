@@ -5,14 +5,31 @@ from __future__ import annotations
 from unittest.mock import AsyncMock, MagicMock
 
 import pytest
+from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers import entity_registry as er
+from homeassistant.helpers.entity_registry import EntityRegistry
+from syrupy.assertion import SnapshotAssertion
+
+try:
+    from pytest_homeassistant_custom_component.common import (
+        MockConfigEntry,
+        snapshot_platform,
+    )
+except ImportError:
+    from tests.common import MockConfigEntry, snapshot_platform  # type: ignore[no-redef]
 
 from custom_components.swegon_modbus.const import DOMAIN
 from custom_components.swegon_modbus.models import NUMBER_DESCRIPTIONS
 
 from .fixtures import mock_error_result, mock_register_result
+
+
+@pytest.fixture
+def platforms() -> list[Platform]:
+    """Load only the number platform for this test module."""
+    return [Platform.NUMBER]
 
 
 # ---------------------------------------------------------------------------
@@ -132,3 +149,19 @@ async def test_number_write_error_raises(
             {"entity_id": entity_id, "value": target},
             blocking=True,
         )
+
+
+# ---------------------------------------------------------------------------
+# Snapshot test — all number entities
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.usefixtures("entity_registry_enabled_by_default")
+async def test_entities(
+    hass: HomeAssistant,
+    snapshot: SnapshotAssertion,
+    entity_registry: EntityRegistry,
+    init_integration: MockConfigEntry,
+) -> None:
+    """Verify all number entity states and attributes match the snapshot."""
+    await snapshot_platform(hass, entity_registry, snapshot, init_integration.entry_id)

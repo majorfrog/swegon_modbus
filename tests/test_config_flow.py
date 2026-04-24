@@ -23,7 +23,7 @@ from custom_components.swegon_modbus.const import (
 )
 from homeassistant.const import CONF_PORT
 
-from .fixtures import MOCK_RTU_ENTRY_DATA
+from .fixtures import MOCK_RTU_ENTRY_DATA, mock_register_result
 
 
 # ---------------------------------------------------------------------------
@@ -43,6 +43,7 @@ def _rtu_connect_patch(connected: bool = True):
             client = MagicMock()
             client.connect = AsyncMock(return_value=connected)
             client.close = MagicMock()
+            client.read_input_registers = AsyncMock(return_value=mock_register_result())
             mock_class.return_value = client
             return client
 

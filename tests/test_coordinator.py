@@ -358,6 +358,48 @@ async def test_get_enabled_keys_cache_hit(hass: HomeAssistant) -> None:
 
 
 # ---------------------------------------------------------------------------
+# _get_enabled_keys — empty registry fallback
+# ---------------------------------------------------------------------------
+
+
+async def test_get_enabled_keys_empty_registry_fallback(hass: HomeAssistant) -> None:
+    """With an empty entity registry, _get_enabled_keys returns all default-enabled keys."""
+    from custom_components.swegon_modbus.models import (  # noqa: PLC0415
+        BINARY_SENSOR_DESCRIPTIONS,
+        BUTTON_DESCRIPTIONS,
+        COMBINED_SENSOR_DESCRIPTIONS,
+        NUMBER_DESCRIPTIONS,
+        SELECT_DESCRIPTIONS,
+        SENSOR_DESCRIPTIONS,
+        SWITCH_DESCRIPTIONS,
+    )
+
+    mock_client = _connected_client()
+    coordinator = _make_coordinator(hass, mock_client)
+
+    # Entity registry has no entries for this config entry yet (first boot)
+    keys = coordinator._get_enabled_keys()
+
+    all_descs = (
+        *SENSOR_DESCRIPTIONS,
+        *BINARY_SENSOR_DESCRIPTIONS,
+        *COMBINED_SENSOR_DESCRIPTIONS,
+        *SWITCH_DESCRIPTIONS,
+        *SELECT_DESCRIPTIONS,
+        *NUMBER_DESCRIPTIONS,
+        *BUTTON_DESCRIPTIONS,
+    )
+    expected = {desc.key for desc in all_descs if desc.entity_registry_enabled_default}
+    disabled = {
+        desc.key for desc in all_descs if not desc.entity_registry_enabled_default
+    }
+
+    assert keys == expected
+    # Disabled-by-default keys must be excluded from the fallback set
+    assert not disabled.intersection(keys)
+
+
+# ---------------------------------------------------------------------------
 # _read_batched — empty request list
 # ---------------------------------------------------------------------------
 

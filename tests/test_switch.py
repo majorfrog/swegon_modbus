@@ -4,12 +4,30 @@ from __future__ import annotations
 
 from unittest.mock import AsyncMock, MagicMock
 
+import pytest
+from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import entity_registry as er
+from homeassistant.helpers.entity_registry import EntityRegistry
+from syrupy.assertion import SnapshotAssertion
+
+try:
+    from pytest_homeassistant_custom_component.common import (
+        MockConfigEntry,
+        snapshot_platform,
+    )
+except ImportError:
+    from tests.common import MockConfigEntry, snapshot_platform  # type: ignore[no-redef]
 
 from custom_components.swegon_modbus.const import DOMAIN
 
 from .fixtures import mock_register_result
+
+
+@pytest.fixture
+def platforms() -> list[Platform]:
+    """Load only the switch platform for this test module."""
+    return [Platform.SWITCH]
 
 
 # ---------------------------------------------------------------------------
@@ -126,3 +144,19 @@ async def test_switch_turn_off_writes_zero(
     mock_client.write_register.assert_called_once()
     call_kwargs = mock_client.write_register.call_args.kwargs
     assert call_kwargs["value"] == 0
+
+
+# ---------------------------------------------------------------------------
+# Snapshot test — all switch entities
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.usefixtures("entity_registry_enabled_by_default")
+async def test_entities(
+    hass: HomeAssistant,
+    snapshot: SnapshotAssertion,
+    entity_registry: EntityRegistry,
+    init_integration: MockConfigEntry,
+) -> None:
+    """Verify all switch entity states and attributes match the snapshot."""
+    await snapshot_platform(hass, entity_registry, snapshot, init_integration.entry_id)

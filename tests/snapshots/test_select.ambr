@@ -1,0 +1,755 @@
+# serializer version: 1
+# name: test_entities[select.swegon_casa_auto_air_quality_control-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'off',
+        'user',
+        'low',
+        'normal',
+        'high',
+        'full',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_auto_air_quality_control',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Auto air quality control',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'auto_air_quality_control',
+    'unique_id': 'test_swegon_modbus_entry_id_auto_air_quality_control',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_auto_air_quality_control-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Auto air quality control',
+      'options': list([
+        'off',
+        'user',
+        'low',
+        'normal',
+        'high',
+        'full',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_auto_air_quality_control',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_auto_humidity_control-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'off',
+        'user',
+        'low',
+        'normal',
+        'high',
+        'full',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_auto_humidity_control',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Auto humidity control',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'auto_humidity_control',
+    'unique_id': 'test_swegon_modbus_entry_id_auto_humidity_control',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_auto_humidity_control-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Auto humidity control',
+      'options': list([
+        'off',
+        'user',
+        'low',
+        'normal',
+        'high',
+        'full',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_auto_humidity_control',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_emergency_stop-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'disabled',
+        'active',
+        'overpressurizing',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_emergency_stop',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Emergency stop',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'emergency_stop',
+    'unique_id': 'test_swegon_modbus_entry_id_emergency_stop',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_emergency_stop-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Emergency stop',
+      'options': list([
+        'disabled',
+        'active',
+        'overpressurizing',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_emergency_stop',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_heating_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'not_available',
+        'eco',
+        'comfort',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_heating_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Heating mode',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'heating_mode',
+    'unique_id': 'test_swegon_modbus_entry_id_heating_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_heating_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Heating mode',
+      'options': list([
+        'not_available',
+        'eco',
+        'comfort',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_heating_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_operating_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'stopped',
+        'away',
+        'home',
+        'boost',
+        'travelling',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.swegon_casa_operating_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Operating mode',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'operating_mode',
+    'unique_id': 'test_swegon_modbus_entry_id_operating_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_operating_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Operating mode',
+      'options': list([
+        'stopped',
+        'away',
+        'home',
+        'boost',
+        'travelling',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_operating_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_outside_temperature_sensor-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'internal',
+        't6',
+        't7',
+        't8',
+        't9',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_outside_temperature_sensor',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Outside temperature sensor',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'outside_temperature_sensor',
+    'unique_id': 'test_swegon_modbus_entry_id_outside_temperature_sensor',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_outside_temperature_sensor-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Outside temperature sensor',
+      'options': list([
+        'internal',
+        't6',
+        't7',
+        't8',
+        't9',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_outside_temperature_sensor',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_room_temperature_sensor-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'internal',
+        't6',
+        't7',
+        't8',
+        't9',
+        'up1',
+        'up2',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_room_temperature_sensor',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Room temperature sensor',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'room_temperature_sensor',
+    'unique_id': 'test_swegon_modbus_entry_id_room_temperature_sensor',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_room_temperature_sensor-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Room temperature sensor',
+      'options': list([
+        'internal',
+        't6',
+        't7',
+        't8',
+        't9',
+        'up1',
+        'up2',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_room_temperature_sensor',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_summer_night_cooling_boost_control-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'off',
+        'low',
+        'normal',
+        'high',
+        'full',
+        'user',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_summer_night_cooling_boost_control',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Summer night cooling boost',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_night_cooling_boost_control',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_night_cooling_boost_control',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_summer_night_cooling_boost_control-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Summer night cooling boost',
+      'options': list([
+        'off',
+        'low',
+        'normal',
+        'high',
+        'full',
+        'user',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_summer_night_cooling_boost_control',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_summer_night_cooling_control-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'off',
+        'low',
+        'normal',
+        'high',
+        'full',
+        'user',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_summer_night_cooling_control',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Summer night cooling',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_night_cooling_control',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_night_cooling_control',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_summer_night_cooling_control-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Summer night cooling',
+      'options': list([
+        'off',
+        'low',
+        'normal',
+        'high',
+        'full',
+        'user',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_summer_night_cooling_control',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_supply_temperature_sensor-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'internal',
+        't6',
+        't7',
+        't8',
+        't9',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_supply_temperature_sensor',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Supply temperature sensor',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_temperature_sensor',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_temperature_sensor',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_supply_temperature_sensor-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Supply temperature sensor',
+      'options': list([
+        'internal',
+        't6',
+        't7',
+        't8',
+        't9',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_supply_temperature_sensor',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_temperature_controller_method-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'supply_air',
+        'room_air',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_temperature_controller_method',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Temperature controller method',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'temperature_controller_method',
+    'unique_id': 'test_swegon_modbus_entry_id_temperature_controller_method',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_temperature_controller_method-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Temperature controller method',
+      'options': list([
+        'supply_air',
+        'room_air',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_temperature_controller_method',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_entities[select.swegon_casa_water_temperature_sensor-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'internal',
+        't6',
+        't7',
+        't8',
+        't9',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.swegon_casa_water_temperature_sensor',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Water temperature sensor',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'water_temperature_sensor',
+    'unique_id': 'test_swegon_modbus_entry_id_water_temperature_sensor',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[select.swegon_casa_water_temperature_sensor-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Water temperature sensor',
+      'options': list([
+        'internal',
+        't6',
+        't7',
+        't8',
+        't9',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.swegon_casa_water_temperature_sensor',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---

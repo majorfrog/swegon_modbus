@@ -1,0 +1,961 @@
+# serializer version: 1
+# name: test_entities[switch.swegon_casa_auto_home_away_boost-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_auto_home_away_boost',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Auto home/away/boost',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'auto_home_away_boost',
+    'unique_id': 'test_swegon_modbus_entry_id_auto_home_away_boost',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_auto_home_away_boost-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Auto home/away/boost',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_auto_home_away_boost',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_auto_humidity_smart_visibility-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_auto_humidity_smart_visibility',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Auto humidity control visibility (smart functions)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'auto_humidity_smart_visibility',
+    'unique_id': 'test_swegon_modbus_entry_id_auto_humidity_smart_visibility',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_auto_humidity_smart_visibility-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Auto humidity control visibility (smart functions)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_auto_humidity_smart_visibility',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_central_vacuum_cleaner-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_central_vacuum_cleaner',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Central vacuum cleaner',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'central_vacuum_cleaner',
+    'unique_id': 'test_swegon_modbus_entry_id_central_vacuum_cleaner',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_central_vacuum_cleaner-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Central vacuum cleaner',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_central_vacuum_cleaner',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_central_vacuum_smart_visibility-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_central_vacuum_smart_visibility',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Central vacuum visibility (smart functions)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'central_vacuum_smart_visibility',
+    'unique_id': 'test_swegon_modbus_entry_id_central_vacuum_smart_visibility',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_central_vacuum_smart_visibility-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Central vacuum visibility (smart functions)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_central_vacuum_smart_visibility',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_cooker_hood_damper-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': None,
+    'entity_id': 'switch.swegon_casa_cooker_hood_damper',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Cooker hood damper',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'cooker_hood_damper',
+    'unique_id': 'test_swegon_modbus_entry_id_cooker_hood_damper',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_cooker_hood_damper-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Cooker hood damper',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_cooker_hood_damper',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_cooker_hood_function-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_cooker_hood_function',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Cooker hood function',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'cooker_hood_function',
+    'unique_id': 'test_swegon_modbus_entry_id_cooker_hood_function',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_cooker_hood_function-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Cooker hood function',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_cooker_hood_function',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_external_cooling-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_external_cooling',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External cooling',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_cooling',
+    'unique_id': 'test_swegon_modbus_entry_id_external_cooling',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_external_cooling-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA External cooling',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_external_cooling',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_external_electrical_preheater-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_external_electrical_preheater',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External electrical preheater',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_electrical_preheater',
+    'unique_id': 'test_swegon_modbus_entry_id_external_electrical_preheater',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_external_electrical_preheater-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA External electrical preheater',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_external_electrical_preheater',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_external_liquid_coil-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_external_liquid_coil',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External liquid coil',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_liquid_coil',
+    'unique_id': 'test_swegon_modbus_entry_id_external_liquid_coil',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_external_liquid_coil-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA External liquid coil',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_external_liquid_coil',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_external_post_heater-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_external_post_heater',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External post heater',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_post_heater',
+    'unique_id': 'test_swegon_modbus_entry_id_external_post_heater',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_external_post_heater-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA External post heater',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_external_post_heater',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_fireplace_smart_visibility-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_fireplace_smart_visibility',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Fireplace visibility (smart functions)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'fireplace_smart_visibility',
+    'unique_id': 'test_swegon_modbus_entry_id_fireplace_smart_visibility',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_fireplace_smart_visibility-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Fireplace visibility (smart functions)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_fireplace_smart_visibility',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_heating_boost_control-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_heating_boost_control',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Heating boost control',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'heating_boost_control',
+    'unique_id': 'test_swegon_modbus_entry_id_heating_boost_control',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_heating_boost_control-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Heating boost control',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_heating_boost_control',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_heating_boost_smart_visibility-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_heating_boost_smart_visibility',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Heating boost visibility (smart functions)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'heating_boost_smart_visibility',
+    'unique_id': 'test_swegon_modbus_entry_id_heating_boost_smart_visibility',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_heating_boost_smart_visibility-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Heating boost visibility (smart functions)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_heating_boost_smart_visibility',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_internal_post_heater-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_internal_post_heater',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Internal post heater',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'internal_post_heater',
+    'unique_id': 'test_swegon_modbus_entry_id_internal_post_heater',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_internal_post_heater-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Internal post heater',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_internal_post_heater',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_service_reminder_enable-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_service_reminder_enable',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Service reminder',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'service_reminder_enable',
+    'unique_id': 'test_swegon_modbus_entry_id_service_reminder_enable',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_service_reminder_enable-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Service reminder',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_service_reminder_enable',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_shutdown_smart_visibility-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_shutdown_smart_visibility',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Shutdown visibility (smart functions)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'shutdown_smart_visibility',
+    'unique_id': 'test_swegon_modbus_entry_id_shutdown_smart_visibility',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_shutdown_smart_visibility-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Shutdown visibility (smart functions)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_shutdown_smart_visibility',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_summer_cooling_cooker_hood_damper-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_summer_cooling_cooker_hood_damper',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Summer cooling cooker hood damper',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_cooker_hood_damper',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_cooker_hood_damper',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_summer_cooling_cooker_hood_damper-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Summer cooling cooker hood damper',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_summer_cooling_cooker_hood_damper',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_summer_cooling_smart_visibility-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_summer_cooling_smart_visibility',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Summer night cooling visibility (smart functions)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_smart_visibility',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_smart_visibility',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_summer_cooling_smart_visibility-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Summer night cooling visibility (smart functions)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_summer_cooling_smart_visibility',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_travelling_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_travelling_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Travelling mode',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'travelling_mode',
+    'unique_id': 'test_swegon_modbus_entry_id_travelling_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_travelling_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Travelling mode',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_travelling_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[switch.swegon_casa_travelling_smart_visibility-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.swegon_casa_travelling_smart_visibility',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Travelling visibility (smart functions)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'travelling_smart_visibility',
+    'unique_id': 'test_swegon_modbus_entry_id_travelling_smart_visibility',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[switch.swegon_casa_travelling_smart_visibility-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Travelling visibility (smart functions)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.swegon_casa_travelling_smart_visibility',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---

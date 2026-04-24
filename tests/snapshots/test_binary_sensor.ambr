@@ -1,0 +1,2857 @@
+# serializer version: 1
+# name: test_entities[binary_sensor.swegon_casa_afterheater_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_afterheater_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Afterheater failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'afterheater_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_afterheater_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_afterheater_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Afterheater failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_afterheater_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_afterheater_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_afterheater_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Afterheater failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'afterheater_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_afterheater_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_afterheater_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Afterheater failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_afterheater_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_alarm_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_alarm_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Alarm active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'alarm_active',
+    'unique_id': 'test_swegon_modbus_entry_id_alarm_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_alarm_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Alarm active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_alarm_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_central_vacuum_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_central_vacuum_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Central vacuum active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'central_vacuum_active',
+    'unique_id': 'test_swegon_modbus_entry_id_central_vacuum_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_central_vacuum_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Central vacuum active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_central_vacuum_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_combined_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_combined_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Combined alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'combined_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_combined_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_combined_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Combined alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_combined_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_combined_info-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_combined_info',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Combined info',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'combined_info',
+    'unique_id': 'test_swegon_modbus_entry_id_combined_info',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_combined_info-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Combined info',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_combined_info',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_cooling_control_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_cooling_control_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Cooling control active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'cooling_control_active',
+    'unique_id': 'test_swegon_modbus_entry_id_cooling_control_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_cooling_control_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Cooling control active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_cooling_control_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_emergency_stop_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_emergency_stop_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Emergency stop',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'emergency_stop_active',
+    'unique_id': 'test_swegon_modbus_entry_id_emergency_stop_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_emergency_stop_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Emergency stop',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_emergency_stop_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_exhaust_fan_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_exhaust_fan_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Exhaust fan failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'exhaust_fan_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_exhaust_fan_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_exhaust_fan_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Exhaust fan failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_exhaust_fan_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_exhaust_fan_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_exhaust_fan_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Exhaust fan failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'exhaust_fan_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_exhaust_fan_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_exhaust_fan_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Exhaust fan failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_exhaust_fan_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_external_away_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_external_away_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External away active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_away_active',
+    'unique_id': 'test_swegon_modbus_entry_id_external_away_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_external_away_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA External away active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_external_away_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_external_boost_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_external_boost_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External boost active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_boost_active',
+    'unique_id': 'test_swegon_modbus_entry_id_external_boost_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_external_boost_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA External boost active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_external_boost_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_fan_control_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_fan_control_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Fan control alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'fan_control_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_fan_control_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_fan_control_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Fan control alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_fan_control_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_fan_control_alarm_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_fan_control_alarm_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Fan control alarm (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'fan_control_alarm_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_fan_control_alarm_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_fan_control_alarm_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Fan control alarm (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_fan_control_alarm_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_filter_guard_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_filter_guard_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Filter guard active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'filter_guard_active',
+    'unique_id': 'test_swegon_modbus_entry_id_filter_guard_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_filter_guard_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Filter guard active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_filter_guard_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_filter_guard_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_filter_guard_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Filter guard info (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'filter_guard_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_filter_guard_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_filter_guard_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Filter guard info (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_filter_guard_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_fireplace_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_fireplace_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Fireplace active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'fireplace_active',
+    'unique_id': 'test_swegon_modbus_entry_id_fireplace_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_fireplace_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Fireplace active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_fireplace_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_freezing_danger-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_freezing_danger',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Freezing danger',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'freezing_danger',
+    'unique_id': 'test_swegon_modbus_entry_id_freezing_danger',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_freezing_danger-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Freezing danger',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_freezing_danger',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_freezing_danger_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_freezing_danger_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Freezing danger (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'freezing_danger_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_freezing_danger_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_freezing_danger_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Freezing danger (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_freezing_danger_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_hood_compensation_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_hood_compensation_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Hood compensation active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'hood_compensation_active',
+    'unique_id': 'test_swegon_modbus_entry_id_hood_compensation_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_hood_compensation_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Hood compensation active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_hood_compensation_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_info_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_info_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Info active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'info_active',
+    'unique_id': 'test_swegon_modbus_entry_id_info_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_info_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Info active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_info_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_internal_temp_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_internal_temp_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Internal temperature alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'internal_temp_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_internal_temp_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_internal_temp_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Internal temperature alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_internal_temp_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_internal_temp_alarm_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_internal_temp_alarm_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Internal temperature alarm (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'internal_temp_alarm_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_internal_temp_alarm_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_internal_temp_alarm_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Internal temperature alarm (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_internal_temp_alarm_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Preheater active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'preheater_active',
+    'unique_id': 'test_swegon_modbus_entry_id_preheater_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Preheater active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Preheater failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'preheater_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_preheater_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Preheater failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Preheater failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'preheater_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_preheater_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Preheater failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_temp_high-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_temp_high',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Preheater temperature high',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'preheater_temp_high',
+    'unique_id': 'test_swegon_modbus_entry_id_preheater_temp_high',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_temp_high-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Preheater temperature high',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_temp_high',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_temp_high_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_temp_high_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Preheater temperature high (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'preheater_temp_high_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_preheater_temp_high_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_preheater_temp_high_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Preheater temperature high (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_preheater_temp_high_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_rotor_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_rotor_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Rotor active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'rotor_active',
+    'unique_id': 'test_swegon_modbus_entry_id_rotor_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_rotor_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Rotor active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_rotor_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_rotor_alarm-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_rotor_alarm',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Rotor alarm',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'rotor_alarm',
+    'unique_id': 'test_swegon_modbus_entry_id_rotor_alarm',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_rotor_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Rotor alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_rotor_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_rotor_alarm_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_rotor_alarm_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Rotor alarm (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'rotor_alarm_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_rotor_alarm_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_rotor_alarm_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Rotor alarm (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_rotor_alarm_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_service_info-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_service_info',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Service info',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'service_info',
+    'unique_id': 'test_swegon_modbus_entry_id_service_info',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_service_info-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Service info',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_service_info',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_summer_cooling_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_summer_cooling_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Summer cooling active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'summer_cooling_active',
+    'unique_id': 'test_swegon_modbus_entry_id_summer_cooling_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_summer_cooling_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Summer cooling active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_summer_cooling_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_fan_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_supply_fan_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Supply fan failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_fan_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_fan_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_fan_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Supply fan failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_supply_fan_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_fan_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_supply_fan_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Supply fan failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_fan_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_fan_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_fan_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Supply fan failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_supply_fan_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_temp_high-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_supply_temp_high',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Supply temperature high',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_temp_high',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_temp_high',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_temp_high-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Supply temperature high',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_supply_temp_high',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_temp_high_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_supply_temp_high_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Supply temperature high (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_temp_high_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_temp_high_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_temp_high_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Supply temperature high (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_supply_temp_high_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_temp_low-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_supply_temp_low',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'Supply temperature low',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_temp_low',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_temp_low',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_temp_low-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA Supply temperature low',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_supply_temp_low',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_temp_low_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_supply_temp_low_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Supply temperature low (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'supply_temp_low_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_supply_temp_low_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_supply_temp_low_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Supply temperature low (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_supply_temp_low_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t1_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t1_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T1 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't1_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t1_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t1_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T1 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t1_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t1_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t1_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T1 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't1_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t1_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t1_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T1 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t1_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t2_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t2_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T2 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't2_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t2_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t2_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T2 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t2_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t2_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t2_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T2 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't2_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t2_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t2_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T2 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t2_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t3_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t3_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T3 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't3_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t3_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t3_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T3 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t3_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t3_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t3_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T3 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't3_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t3_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t3_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T3 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t3_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t4_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t4_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T4 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't4_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t4_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t4_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T4 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t4_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t4_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t4_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T4 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't4_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t4_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t4_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T4 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t4_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t5_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t5_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T5 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't5_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t5_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t5_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T5 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t5_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t5_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t5_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T5 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't5_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t5_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t5_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T5 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t5_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t6_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t6_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T6 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't6_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t6_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t6_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T6 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t6_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t6_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t6_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T6 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't6_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t6_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t6_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T6 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t6_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t7_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t7_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T7 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't7_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t7_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t7_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T7 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t7_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t7_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t7_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T7 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't7_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t7_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t7_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T7 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t7_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t8_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t8_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T8 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't8_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t8_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t8_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T8 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t8_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t8_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t8_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T8 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't8_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t8_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t8_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T8 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t8_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t9_sensor_failure-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t9_sensor_failure',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
+    'original_icon': None,
+    'original_name': 'T9 temperature sensor failure',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't9_sensor_failure',
+    'unique_id': 'test_swegon_modbus_entry_id_t9_sensor_failure',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t9_sensor_failure-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'problem',
+      'friendly_name': 'Swegon CASA T9 temperature sensor failure',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t9_sensor_failure',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t9_sensor_failure_unconfirmed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_t9_sensor_failure_unconfirmed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'T9 temperature sensor failure (unconfirmed)',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 't9_sensor_failure_unconfirmed',
+    'unique_id': 'test_swegon_modbus_entry_id_t9_sensor_failure_unconfirmed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_t9_sensor_failure_unconfirmed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA T9 temperature sensor failure (unconfirmed)',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_t9_sensor_failure_unconfirmed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_travelling_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_travelling_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Travelling active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'travelling_active',
+    'unique_id': 'test_swegon_modbus_entry_id_travelling_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_travelling_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Travelling active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_travelling_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_week_timer_active-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.swegon_casa_week_timer_active',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Week timer active',
+    'platform': 'swegon_modbus',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'week_timer_active',
+    'unique_id': 'test_swegon_modbus_entry_id_week_timer_active',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_entities[binary_sensor.swegon_casa_week_timer_active-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Swegon CASA Week timer active',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.swegon_casa_week_timer_active',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---

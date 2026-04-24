@@ -98,7 +98,14 @@ async def async_setup_entry(
 
     entry.runtime_data = coordinator
 
-    # Update device registry with firmware version if available
+    entry.async_on_unload(coordinator.async_disconnect)
+
+    _LOGGER.debug("Forwarding entry setup to platforms: %s", PLATFORMS)
+    await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
+    _LOGGER.debug("Platform setup complete")
+
+    # Update device registry with firmware version after platforms have
+    # registered the device entity.
     if coordinator.data:
         fw_major = coordinator.data.get("firmware_version_major")
         fw_minor = coordinator.data.get("firmware_version_minor")
@@ -117,11 +124,6 @@ async def async_setup_entry(
                     "Updated device sw_version to %s", sw_version
                 )
 
-    entry.async_on_unload(coordinator.async_disconnect)
-
-    _LOGGER.debug("Forwarding entry setup to platforms: %s", PLATFORMS)
-    await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
-    _LOGGER.debug("Platform setup complete")
     return True
 
 

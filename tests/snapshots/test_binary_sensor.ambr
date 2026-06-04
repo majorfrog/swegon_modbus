@@ -1,8 +1,9 @@
 # serializer version: 1
 # name: test_entities[binary_sensor.swegon_casa_afterheater_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -20,6 +21,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'afterheater_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -50,8 +52,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_afterheater_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -69,6 +72,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'afterheater_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -98,8 +102,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_alarm_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -117,6 +122,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'alarm_active',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -147,8 +153,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_central_vacuum_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -166,6 +173,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'central_vacuum_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -195,8 +203,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_combined_alarm-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -214,6 +223,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'combined_alarm',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -244,8 +254,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_combined_info-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -263,6 +274,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'combined_info',
     'options': dict({
     }),
     'original_device_class': None,
@@ -292,8 +304,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_cooling_control_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -311,6 +324,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'cooling_control_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -340,8 +354,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_emergency_stop_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -359,6 +374,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'emergency_stop_active',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -389,8 +405,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_exhaust_fan_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -408,6 +425,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'exhaust_fan_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -438,8 +456,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_exhaust_fan_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -457,6 +476,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'exhaust_fan_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -486,8 +506,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_external_away_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -505,6 +526,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'external_away_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -534,8 +556,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_external_boost_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -553,6 +576,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'external_boost_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -582,8 +606,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_fan_control_alarm-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -601,6 +626,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'fan_control_alarm',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -631,8 +657,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_fan_control_alarm_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -650,6 +677,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'fan_control_alarm_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -679,8 +707,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_filter_guard_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -698,6 +727,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'filter_guard_active',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -728,8 +758,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_filter_guard_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -747,6 +778,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'filter_guard_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -776,8 +808,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_fireplace_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -795,6 +828,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'fireplace_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -824,8 +858,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_freezing_danger-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -843,6 +878,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'freezing_danger',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -873,8 +909,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_freezing_danger_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -892,6 +929,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'freezing_danger_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -921,8 +959,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_hood_compensation_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -940,6 +979,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'hood_compensation_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -969,8 +1009,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_info_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -988,6 +1029,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'info_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1017,8 +1059,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_internal_temp_alarm-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1036,6 +1079,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'internal_temp_alarm',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -1066,8 +1110,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_internal_temp_alarm_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1085,6 +1130,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'internal_temp_alarm_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1114,8 +1160,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_preheater_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1133,6 +1180,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'preheater_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1162,8 +1210,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_preheater_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1181,6 +1230,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'preheater_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -1211,8 +1261,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_preheater_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1230,6 +1281,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'preheater_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1259,8 +1311,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_preheater_temp_high-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1278,6 +1331,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'preheater_temp_high',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -1308,8 +1362,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_preheater_temp_high_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1327,6 +1382,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'preheater_temp_high_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1356,8 +1412,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_rotor_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1375,6 +1432,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'rotor_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1404,8 +1462,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_rotor_alarm-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1423,6 +1482,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'rotor_alarm',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -1453,8 +1513,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_rotor_alarm_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1472,6 +1533,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'rotor_alarm_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1501,8 +1563,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_service_info-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1520,6 +1583,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'service_info',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1549,8 +1613,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_summer_cooling_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1568,6 +1633,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_cooling_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1597,8 +1663,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_supply_fan_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1616,6 +1683,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_fan_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -1646,8 +1714,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_supply_fan_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1665,6 +1734,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_fan_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1694,8 +1764,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_supply_temp_high-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1713,6 +1784,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_temp_high',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -1743,8 +1815,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_supply_temp_high_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1762,6 +1835,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_temp_high_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1791,8 +1865,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_supply_temp_low-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1810,6 +1885,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_temp_low',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -1840,8 +1916,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_supply_temp_low_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1859,6 +1936,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_temp_low_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1888,8 +1966,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t1_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1907,6 +1986,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't1_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -1937,8 +2017,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t1_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -1956,6 +2037,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't1_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1985,8 +2067,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t2_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2004,6 +2087,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't2_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -2034,8 +2118,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t2_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2053,6 +2138,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't2_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2082,8 +2168,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t3_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2101,6 +2188,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't3_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -2131,8 +2219,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t3_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2150,6 +2239,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't3_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2179,8 +2269,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t4_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2198,6 +2289,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't4_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -2228,8 +2320,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t4_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2247,6 +2340,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't4_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2276,8 +2370,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t5_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2295,6 +2390,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't5_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -2325,8 +2421,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t5_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2344,6 +2441,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't5_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2373,8 +2471,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t6_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2392,6 +2491,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't6_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -2422,8 +2522,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t6_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2441,6 +2542,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't6_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2470,8 +2572,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t7_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2489,6 +2592,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't7_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -2519,8 +2623,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t7_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2538,6 +2643,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't7_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2567,8 +2673,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t8_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2586,6 +2693,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't8_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -2616,8 +2724,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t8_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2635,6 +2744,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't8_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2664,8 +2774,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t9_sensor_failure-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2683,6 +2794,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't9_sensor_failure',
     'options': dict({
     }),
     'original_device_class': <BinarySensorDeviceClass.PROBLEM: 'problem'>,
@@ -2713,8 +2825,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_t9_sensor_failure_unconfirmed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2732,6 +2845,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 't9_sensor_failure_unconfirmed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2761,8 +2875,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_travelling_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2780,6 +2895,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'travelling_active',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2809,8 +2925,9 @@
 # ---
 # name: test_entities[binary_sensor.swegon_casa_week_timer_active-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': None,
     'config_entry_id': <ANY>,
@@ -2828,6 +2945,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'week_timer_active',
     'options': dict({
     }),
     'original_device_class': None,

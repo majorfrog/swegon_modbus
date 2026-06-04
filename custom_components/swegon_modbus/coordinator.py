@@ -432,6 +432,7 @@ class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None
                 _LOGGER.debug("connect() raised OSError: %s", err)
                 connected = False
             if not connected:
+                self._client.close()
                 _LOGGER.debug("Connection failed; applying backoff")
                 self._apply_backoff()
                 raise UpdateFailed(
@@ -565,6 +566,7 @@ class SwegonModbusCoordinator(DataUpdateCoordinator[dict[str, float | str | None
                     data[desc.key] = float(raw)
 
         except ConnectionException as err:
+            self._client.close()
             self._apply_backoff()
             raise UpdateFailed(
                 f"Modbus connection lost during poll: {err}",

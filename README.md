@@ -188,6 +188,31 @@ A ready-made Home Assistant dashboard is included in the repository as [`swegon.
 
 ---
 
+## Testing (development)
+
+Run tests from this repository root using a Python environment that has Home Assistant test tooling installed:
+
+```bash
+python -m pip install -r requirements-test.txt
+python -m pytest
+```
+
+If you work in an HA dev environment (for example, the HA Core dev container), activate that environment first and then run the same commands from this repo:
+
+```bash
+source /path/to/ha-venv/bin/activate
+cd /path/to/swegon_modbus
+python -m pytest
+```
+
+This integration uses Syrupy snapshots for several tests. If assertions fail due to expected entity/schema changes, update snapshots with:
+
+```bash
+python -m pytest --snapshot-update
+```
+
+---
+
 ## License
 
 [MIT](LICENSE)

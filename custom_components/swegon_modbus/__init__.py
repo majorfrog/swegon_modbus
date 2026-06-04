@@ -93,7 +93,13 @@ async def async_setup_entry(
     coordinator = SwegonModbusCoordinator(hass, entry)
 
     _LOGGER.debug("Starting first refresh")
-    await coordinator.async_config_entry_first_refresh()
+    try:
+        await coordinator.async_config_entry_first_refresh()
+    except BaseException:
+        # Ensure the serial port is released if setup fails before unload callbacks
+        # are registered (for example when setup raises ConfigEntryNotReady).
+        coordinator.async_disconnect()
+        raise
     _LOGGER.debug("First refresh complete")
 
     entry.runtime_data = coordinator

@@ -2,9 +2,17 @@
 
 from __future__ import annotations
 
+from unittest.mock import AsyncMock, MagicMock, patch
+
 import pytest
 import voluptuous as vol
 from homeassistant.core import HomeAssistant
+from homeassistant.exceptions import ConfigEntryNotReady
+
+try:
+    from pytest_homeassistant_custom_component.common import MockConfigEntry
+except ImportError:
+    from tests.common import MockConfigEntry  # type: ignore[no-redef]
 
 from custom_components.swegon_modbus.const import DOMAIN
 
@@ -61,3 +69,73 @@ async def test_async_setup_with_yaml_config_imports_entry(
     entries = hass.config_entries.async_entries(DOMAIN)
     flows = hass.config_entries.flow.async_progress_by_handler(DOMAIN)
     assert entries or flows, "Expected at least one config entry or in-progress flow"
+
+
+async def test_async_setup_entry_refresh_failure_closes_client(
+    hass: HomeAssistant,
+) -> None:
+    """Failed first refresh closes the client before re-raising."""
+    from custom_components.swegon_modbus import async_setup_entry
+
+    entry = MockConfigEntry(
+        domain=DOMAIN,
+        data=MOCK_RTU_ENTRY_DATA,
+        title="Swegon CASA",
+        unique_id="swegon_setup_fail",
+    )
+    entry.add_to_hass(hass)
+
+    coordinator = MagicMock()
+    coordinator.async_config_entry_first_refresh = AsyncMock(
+        side_effect=ConfigEntryNotReady("connect failed")
+    )
+    coordinator.async_disconnect = MagicMock()
+
+    with patch(
+        "custom_components.swegon_modbus.SwegonModbusCoordinator",
+        return_value=coordinator,
+    ):
+        with pytest.raises(ConfigEntryNotReady):
+            await async_setup_entry(hass, entry)
+
+    coordinator.async_disconnect.assert_called_once()
+
+
+async def test_connection_exception_during_update_closes_client(
+    hass: HomeAssistant,
+) -> None:
+    """Connection loss during poll closes the client to release serial lock."""
+    from pymodbus.exceptions import ConnectionException
+
+    from custom_components.swegon_modbus.coordinator import SwegonModbusCoordinator
+
+    entry = MockConfigEntry(
+        domain=DOMAIN,
+        data=MOCK_RTU_ENTRY_DATA,
+        title="Swegon CASA",
+        unique_id="swegon_poll_fail",
+    )
+    entry.add_to_hass(hass)
+
+    mock_client = MagicMock()
+    mock_client.connected = True
+    mock_client.close = MagicMock()
+    mock_client.read_input_registers = AsyncMock(
+        side_effect=ConnectionException("lost")
+    )
+    mock_client.read_holding_registers = AsyncMock(
+        side_effect=ConnectionException("lost")
+    )
+
+    with patch(
+        "custom_components.swegon_modbus.coordinator.AsyncModbusSerialClient",
+        return_value=mock_client,
+    ):
+        coordinator = SwegonModbusCoordinator(hass, entry)
+
+    from homeassistant.helpers.update_coordinator import UpdateFailed
+
+    with pytest.raises(UpdateFailed, match="Modbus connection lost"):
+        await coordinator._async_update_data()
+
+    mock_client.close.assert_called_once()

@@ -1,8 +1,9 @@
 # serializer version: 1
 # name: test_entities[select.swegon_casa_auto_air_quality_control-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -29,6 +30,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'auto_air_quality_control',
     'options': dict({
     }),
     'original_device_class': None,
@@ -66,8 +68,9 @@
 # ---
 # name: test_entities[select.swegon_casa_auto_humidity_control-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -94,6 +97,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'auto_humidity_control',
     'options': dict({
     }),
     'original_device_class': None,
@@ -131,8 +135,9 @@
 # ---
 # name: test_entities[select.swegon_casa_emergency_stop-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -156,6 +161,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'emergency_stop',
     'options': dict({
     }),
     'original_device_class': None,
@@ -190,8 +196,9 @@
 # ---
 # name: test_entities[select.swegon_casa_heating_mode-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -215,6 +222,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'heating_mode',
     'options': dict({
     }),
     'original_device_class': None,
@@ -249,8 +257,9 @@
 # ---
 # name: test_entities[select.swegon_casa_operating_mode-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -276,6 +285,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'operating_mode',
     'options': dict({
     }),
     'original_device_class': None,
@@ -312,8 +322,9 @@
 # ---
 # name: test_entities[select.swegon_casa_outside_temperature_sensor-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -339,6 +350,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'outside_temperature_sensor',
     'options': dict({
     }),
     'original_device_class': None,
@@ -375,8 +387,9 @@
 # ---
 # name: test_entities[select.swegon_casa_room_temperature_sensor-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -404,6 +417,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'room_temperature_sensor',
     'options': dict({
     }),
     'original_device_class': None,
@@ -442,8 +456,9 @@
 # ---
 # name: test_entities[select.swegon_casa_summer_night_cooling_boost_control-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -470,6 +485,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_night_cooling_boost_control',
     'options': dict({
     }),
     'original_device_class': None,
@@ -507,8 +523,9 @@
 # ---
 # name: test_entities[select.swegon_casa_summer_night_cooling_control-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -535,6 +552,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_night_cooling_control',
     'options': dict({
     }),
     'original_device_class': None,
@@ -572,8 +590,9 @@
 # ---
 # name: test_entities[select.swegon_casa_supply_temperature_sensor-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -599,6 +618,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_temperature_sensor',
     'options': dict({
     }),
     'original_device_class': None,
@@ -635,8 +655,9 @@
 # ---
 # name: test_entities[select.swegon_casa_temperature_controller_method-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -659,6 +680,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'temperature_controller_method',
     'options': dict({
     }),
     'original_device_class': None,
@@ -692,8 +714,9 @@
 # ---
 # name: test_entities[select.swegon_casa_water_temperature_sensor-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'options': list([
@@ -719,6 +742,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'water_temperature_sensor',
     'options': dict({
     }),
     'original_device_class': None,

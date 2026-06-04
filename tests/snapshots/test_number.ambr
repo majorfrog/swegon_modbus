@@ -1,8 +1,9 @@
 # serializer version: 1
 # name: test_entities[number.swegon_casa_away_temp_drop-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 10,
@@ -25,6 +26,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'away_temp_drop',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -60,8 +62,9 @@
 # ---
 # name: test_entities[number.swegon_casa_central_vacuum_compensation-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -84,6 +87,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'central_vacuum_compensation',
     'options': dict({
     }),
     'original_device_class': None,
@@ -118,8 +122,9 @@
 # ---
 # name: test_entities[number.swegon_casa_central_vacuum_run_time-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 60,
@@ -142,6 +147,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'central_vacuum_run_time',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.DURATION: 'duration'>,
@@ -177,8 +183,9 @@
 # ---
 # name: test_entities[number.swegon_casa_co2_away_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 2000,
@@ -201,6 +208,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'co2_away_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.CO2: 'carbon_dioxide'>,
@@ -236,8 +244,9 @@
 # ---
 # name: test_entities[number.swegon_casa_co2_home_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 2000,
@@ -260,6 +269,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'co2_home_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.CO2: 'carbon_dioxide'>,
@@ -295,8 +305,9 @@
 # ---
 # name: test_entities[number.swegon_casa_cooker_hood_boost_compensation-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -319,6 +330,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'cooker_hood_boost_compensation',
     'options': dict({
     }),
     'original_device_class': None,
@@ -353,8 +365,9 @@
 # ---
 # name: test_entities[number.swegon_casa_cooker_hood_boost_speed-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -377,6 +390,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'cooker_hood_boost_speed',
     'options': dict({
     }),
     'original_device_class': None,
@@ -411,8 +425,9 @@
 # ---
 # name: test_entities[number.swegon_casa_cooker_hood_home_compensation-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -435,6 +450,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'cooker_hood_home_compensation',
     'options': dict({
     }),
     'original_device_class': None,
@@ -469,8 +485,9 @@
 # ---
 # name: test_entities[number.swegon_casa_cooling_fresh_air_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -493,6 +510,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'cooling_fresh_air_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -528,8 +546,9 @@
 # ---
 # name: test_entities[number.swegon_casa_exhaust_fan_speed_away-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -552,6 +571,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'exhaust_fan_speed_away',
     'options': dict({
     }),
     'original_device_class': None,
@@ -586,8 +606,9 @@
 # ---
 # name: test_entities[number.swegon_casa_exhaust_fan_speed_boost-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -610,6 +631,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'exhaust_fan_speed_boost',
     'options': dict({
     }),
     'original_device_class': None,
@@ -644,8 +666,9 @@
 # ---
 # name: test_entities[number.swegon_casa_exhaust_fan_speed_home-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -668,6 +691,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'exhaust_fan_speed_home',
     'options': dict({
     }),
     'original_device_class': None,
@@ -702,8 +726,9 @@
 # ---
 # name: test_entities[number.swegon_casa_external_precooling_fresh_air_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -726,6 +751,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'external_precooling_fresh_air_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -761,8 +787,9 @@
 # ---
 # name: test_entities[number.swegon_casa_external_preheating_fresh_air_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -785,6 +812,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'external_preheating_fresh_air_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -820,8 +848,9 @@
 # ---
 # name: test_entities[number.swegon_casa_fireplace_max_speed_diff-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 25,
@@ -844,6 +873,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'fireplace_max_speed_diff',
     'options': dict({
     }),
     'original_device_class': None,
@@ -878,8 +908,9 @@
 # ---
 # name: test_entities[number.swegon_casa_fireplace_run_time-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 60,
@@ -902,6 +933,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'fireplace_run_time',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.DURATION: 'duration'>,
@@ -937,8 +969,9 @@
 # ---
 # name: test_entities[number.swegon_casa_heating_boost_gain-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -961,6 +994,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'heating_boost_gain',
     'options': dict({
     }),
     'original_device_class': None,
@@ -995,8 +1029,9 @@
 # ---
 # name: test_entities[number.swegon_casa_heating_fresh_air_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -1019,6 +1054,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'heating_fresh_air_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1054,8 +1090,9 @@
 # ---
 # name: test_entities[number.swegon_casa_max_smart_boost-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -1078,6 +1115,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'max_smart_boost',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1112,8 +1150,9 @@
 # ---
 # name: test_entities[number.swegon_casa_rh_boost_delay-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 30,
@@ -1136,6 +1175,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'rh_boost_delay',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.DURATION: 'duration'>,
@@ -1171,8 +1211,9 @@
 # ---
 # name: test_entities[number.swegon_casa_rh_boost_during_delay-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 25,
@@ -1195,6 +1236,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'rh_boost_during_delay',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1229,8 +1271,9 @@
 # ---
 # name: test_entities[number.swegon_casa_rh_boost_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -1253,6 +1296,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'rh_boost_limit',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1287,8 +1331,9 @@
 # ---
 # name: test_entities[number.swegon_casa_rh_full_boost_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -1311,6 +1356,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'rh_full_boost_limit',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1345,8 +1391,9 @@
 # ---
 # name: test_entities[number.swegon_casa_room_control_cooling_max-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -1369,6 +1416,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'room_control_cooling_max',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1404,8 +1452,9 @@
 # ---
 # name: test_entities[number.swegon_casa_room_control_cooling_min-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -1428,6 +1477,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'room_control_cooling_min',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1463,8 +1513,9 @@
 # ---
 # name: test_entities[number.swegon_casa_room_control_supply_max-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -1487,6 +1538,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'room_control_supply_max',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1522,8 +1574,9 @@
 # ---
 # name: test_entities[number.swegon_casa_room_control_supply_min-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 50,
@@ -1546,6 +1599,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'room_control_supply_min',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1581,8 +1635,9 @@
 # ---
 # name: test_entities[number.swegon_casa_room_temp_fine_tuning-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 5.0,
@@ -1605,6 +1660,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'room_temp_fine_tuning',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1640,8 +1696,9 @@
 # ---
 # name: test_entities[number.swegon_casa_service_reminder_interval-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 60,
@@ -1664,6 +1721,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'service_reminder_interval',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1698,8 +1756,9 @@
 # ---
 # name: test_entities[number.swegon_casa_smart_control-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -1722,6 +1781,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'smart_control',
     'options': dict({
     }),
     'original_device_class': None,
@@ -1756,8 +1816,9 @@
 # ---
 # name: test_entities[number.swegon_casa_summer_cooling_boost_room_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 28,
@@ -1780,6 +1841,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_cooling_boost_room_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1815,8 +1877,9 @@
 # ---
 # name: test_entities[number.swegon_casa_summer_cooling_fresh_air_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 25,
@@ -1839,6 +1902,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_cooling_fresh_air_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1874,8 +1938,9 @@
 # ---
 # name: test_entities[number.swegon_casa_summer_cooling_fresh_air_start_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 25,
@@ -1898,6 +1963,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_cooling_fresh_air_start_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1933,8 +1999,9 @@
 # ---
 # name: test_entities[number.swegon_casa_summer_cooling_full_boost_room_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 40,
@@ -1957,6 +2024,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_cooling_full_boost_room_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -1992,8 +2060,9 @@
 # ---
 # name: test_entities[number.swegon_casa_summer_cooling_min_supply_temp-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 25,
@@ -2016,6 +2085,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_cooling_min_supply_temp',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -2051,8 +2121,9 @@
 # ---
 # name: test_entities[number.swegon_casa_summer_cooling_room_temp_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 35,
@@ -2075,6 +2146,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'summer_cooling_room_temp_limit',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -2110,8 +2182,9 @@
 # ---
 # name: test_entities[number.swegon_casa_supply_fan_speed_away-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -2134,6 +2207,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_fan_speed_away',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2168,8 +2242,9 @@
 # ---
 # name: test_entities[number.swegon_casa_supply_fan_speed_boost-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -2192,6 +2267,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_fan_speed_boost',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2226,8 +2302,9 @@
 # ---
 # name: test_entities[number.swegon_casa_supply_fan_speed_home-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 100,
@@ -2250,6 +2327,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_fan_speed_home',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2284,8 +2362,9 @@
 # ---
 # name: test_entities[number.swegon_casa_supply_temp_fine_tuning-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 5.0,
@@ -2308,6 +2387,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'supply_temp_fine_tuning',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -2343,8 +2423,9 @@
 # ---
 # name: test_entities[number.swegon_casa_temperature_setpoint-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 25,
@@ -2367,6 +2448,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'temperature_setpoint',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -2402,8 +2484,9 @@
 # ---
 # name: test_entities[number.swegon_casa_travelling_speed_drop-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 20,
@@ -2426,6 +2509,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'travelling_speed_drop',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2460,8 +2544,9 @@
 # ---
 # name: test_entities[number.swegon_casa_travelling_temp_drop-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 10,
@@ -2484,6 +2569,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'travelling_temp_drop',
     'options': dict({
     }),
     'original_device_class': <NumberDeviceClass.TEMPERATURE: 'temperature'>,
@@ -2519,8 +2605,9 @@
 # ---
 # name: test_entities[number.swegon_casa_voc_boost_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 2000,
@@ -2543,6 +2630,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'voc_boost_limit',
     'options': dict({
     }),
     'original_device_class': None,
@@ -2577,8 +2665,9 @@
 # ---
 # name: test_entities[number.swegon_casa_voc_full_boost_limit-entry]
   EntityRegistryEntrySnapshot({
-    'aliases': set({
-    }),
+    'aliases': list([
+      None,
+    ]),
     'area_id': None,
     'capabilities': dict({
       'max': 2000,
@@ -2601,6 +2690,7 @@
     'labels': set({
     }),
     'name': None,
+    'object_id_base': 'voc_full_boost_limit',
     'options': dict({
     }),
     'original_device_class': None,

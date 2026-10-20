@@ -45,7 +45,7 @@ The integration is built on top of [pymodbus](https://github.com/pymodbus-dev/py
 
 | Requirement | Value |
 |---|---|
-| Home Assistant | 2024.1.0 or newer |
+| Home Assistant | 2024.11.0 or newer |
 | HACS | for easy installation (optional) |
 | Python dependency | `pymodbus>=3.11,<4` (auto-installed) |
 

@@ -127,7 +127,8 @@ class SwegonModbusConfigFlow(ConfigFlow, domain=DOMAIN):
             # Validate device identity by reading firmware major version (3x6001)
             unit_id = int(user_input[CONF_UNIT_ID])
             result = await asyncio.wait_for(
-                client.read_input_registers(6000, 1, unit=unit_id), timeout=10.0
+                client.read_input_registers(6000, count=1, device_id=unit_id),
+                timeout=10.0,
             )
             if result.isError():
                 _LOGGER.debug(

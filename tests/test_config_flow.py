@@ -60,7 +60,7 @@ def _rtu_connect_patch(connected: bool = True):
 
 async def test_rtu_flow_success(hass: HomeAssistant) -> None:
     """Full user flow creates an RTU config entry."""
-    with _rtu_connect_patch():
+    with _rtu_connect_patch() as client:
         result = await hass.config_entries.flow.async_init(
             DOMAIN, context={"source": config_entries.SOURCE_USER}
         )
@@ -83,6 +83,9 @@ async def test_rtu_flow_success(hass: HomeAssistant) -> None:
     assert result["data"][CONF_PORT] == MOCK_RTU_ENTRY_DATA["port"]
     assert result["data"][CONF_UNIT_ID] == MOCK_RTU_ENTRY_DATA["unit_id"]
     assert result["data"][CONF_STOPBITS] == MOCK_RTU_ENTRY_DATA["stopbits"]
+    client.read_input_registers.assert_awaited_once_with(
+        6000, count=1, device_id=int(MOCK_RTU_ENTRY_DATA["unit_id"])
+    )
 
 
 # ---------------------------------------------------------------------------

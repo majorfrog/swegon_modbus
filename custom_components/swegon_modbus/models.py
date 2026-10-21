@@ -37,11 +37,11 @@ from homeassistant.components.sensor import (
 )
 from homeassistant.components.switch import SwitchEntityDescription
 from homeassistant.const import (
-    CONCENTRATION_PARTS_PER_MILLION,
     EntityCategory,
     PERCENTAGE,
     REVOLUTIONS_PER_MINUTE,
     UnitOfPressure,
+    UnitOfRatio,
     UnitOfTemperature,
     UnitOfTime,
 )
@@ -319,13 +319,13 @@ SENSOR_DESCRIPTIONS: tuple[ModbusSensorEntityDescription, ...] = (
     create_generic_sensor(  # 3x6212 — CO2 unfiltered
         "co2_unfiltered",
         6211,
-        native_unit_of_measurement=CONCENTRATION_PARTS_PER_MILLION,
+        native_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
         device_class=SensorDeviceClass.CO2,
     ),
     create_generic_sensor(
         "co2",
         6212,
-        native_unit_of_measurement=CONCENTRATION_PARTS_PER_MILLION,
+        native_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
         scale=1.0,
         precision=0,
         device_class=SensorDeviceClass.CO2,
@@ -355,7 +355,7 @@ SENSOR_DESCRIPTIONS: tuple[ModbusSensorEntityDescription, ...] = (
     create_generic_sensor(
         "voc",
         6216,
-        native_unit_of_measurement=CONCENTRATION_PARTS_PER_MILLION,
+        native_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
         scale=1.0,
         precision=0,
         device_class=SensorDeviceClass.VOLATILE_ORGANIC_COMPOUNDS_PARTS,
@@ -1358,7 +1358,7 @@ NUMBER_DESCRIPTIONS: tuple[ModbusNumberEntityDescription, ...] = (
         key="co2_home_limit",
         translation_key="co2_home_limit",
         address=5113,
-        native_unit_of_measurement=CONCENTRATION_PARTS_PER_MILLION,
+        native_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
         device_class=NumberDeviceClass.CO2,
         native_min_value=0,
         native_max_value=2000,
@@ -1368,7 +1368,7 @@ NUMBER_DESCRIPTIONS: tuple[ModbusNumberEntityDescription, ...] = (
         key="co2_away_limit",
         translation_key="co2_away_limit",
         address=5114,
-        native_unit_of_measurement=CONCENTRATION_PARTS_PER_MILLION,
+        native_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
         device_class=NumberDeviceClass.CO2,
         native_min_value=0,
         native_max_value=2000,
@@ -1386,7 +1386,7 @@ NUMBER_DESCRIPTIONS: tuple[ModbusNumberEntityDescription, ...] = (
         key="voc_boost_limit",
         translation_key="voc_boost_limit",
         address=5120,
-        native_unit_of_measurement=CONCENTRATION_PARTS_PER_MILLION,
+        native_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
         native_min_value=0,
         native_max_value=2000,
         entity_category=EntityCategory.CONFIG,
@@ -1395,7 +1395,7 @@ NUMBER_DESCRIPTIONS: tuple[ModbusNumberEntityDescription, ...] = (
         key="voc_full_boost_limit",
         translation_key="voc_full_boost_limit",
         address=5121,
-        native_unit_of_measurement=CONCENTRATION_PARTS_PER_MILLION,
+        native_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
         native_min_value=0,
         native_max_value=2000,
         entity_category=EntityCategory.CONFIG,

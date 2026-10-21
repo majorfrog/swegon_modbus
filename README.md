@@ -66,10 +66,9 @@ On the Swegon CASA unit, the RJ45 port intended for SEC/SEM accessories is used 
 
 ### HACS (recommended)
 
-1. Open **HACS** → **Integrations** → three-dot menu → **Custom repositories**.
-2. Add `https://github.com/majorfrog/swegon_modbus` with category **Integration**.
-3. Search for **Swegon Modbus** and click **Download**.
-4. Restart Home Assistant.
+1. Open **HACS** → **Integrations** → **Explore & Download Repositories**.
+2. Search for **Swegon Modbus** and select it.
+3. Click **Download** and restart Home Assistant.
 
 ### Manual
 
